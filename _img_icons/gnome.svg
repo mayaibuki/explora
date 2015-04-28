@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>explora_logo22</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FB61AE" offset="0%"></stop>
+            <stop stop-color="#F7501C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="mac.icns" sketch:type="MSArtboardGroup">
+            <g id="explora_logo22" sketch:type="MSLayerGroup">
+                <g id="cubos" transform="translate(0.000000, 0.284129)" sketch:type="MSShapeGroup">
+                    <path d="M178.504533,0 L333.495467,0 C384.896,0 410.589867,0 438.2592,8.73695893 C468.4672,19.7199556 492.258133,43.4844839 503.253333,73.6589567 C512,101.293319 512,126.967192 512,178.306415 L512,333.125327 C512,384.468812 512,410.134162 503.253333,437.772786 C492.258133,467.947259 468.4672,491.711787 438.2592,502.690522 C410.589867,511.431743 384.896,511.431743 333.495467,511.431743 L178.504533,511.431743 C127.104,511.431743 101.405867,511.431743 73.7408,502.690522 C43.5328,491.711787 19.7418667,467.947259 8.74666667,437.772786 C0,410.134162 0,384.468812 0,333.125327 L0,178.306415 C0,126.967192 0,101.293319 8.74666667,73.6589567 C19.7418667,43.4844839 43.5328,19.7199556 73.7408,8.73695893 C101.405867,0 127.104,0 178.504533,0 L178.504533,0" id="Icon-Shape" fill="url(#linearGradient-1)"></path>
+                    <path d="M359.42111,278.155957 L369.777778,284.128746 L468.312224,227.302997 L468.312224,113.651498 L369.777778,56.8257492 L271.243332,113.651498 L271.243332,117.731773 L359.42111,168.630411 L359.42111,278.155957 Z" id="Polygon-1" fill="#FFFFFF"></path>
+                    <path d="M240.756668,116.940329 L240.756668,113.651498 L142.222222,56.8257492 L43.6877763,113.651498 L43.6877763,227.302997 L142.222222,284.128746 L151.207776,278.946692 L151.207776,168.630411 L240.756668,116.940329 Z" id="Polygon-1" fill="#FFFFFF"></path>
+                    <polygon id="Polygon-1" fill="#FFFFFF" points="256 115.356271 354.534446 172.18202 354.534446 285.833518 256 342.659267 157.465554 285.833518 157.465554 172.18202 "></polygon>
+                </g>
+                <text id="explora.life" sketch:type="MSTextLayer" font-family="Montserrat" font-size="77.3485714" font-weight="normal" sketch:alignment="middle" fill="#FFFFFF">
+                    <tspan x="40.4295314" y="430.160932">explora.life</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

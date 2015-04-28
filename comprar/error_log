@@ -1,0 +1,5 @@
+[24-Feb-2015 17:23:33 America/Detroit] PHP Warning:  include(../_contenido/comprar.php): failed to open stream: No such file or directory in /home/mayaibuk/public_html/explora_store/comprar/index.php on line 78
+[24-Feb-2015 17:23:33 America/Detroit] PHP Warning:  include(): Failed opening '../_contenido/comprar.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mayaibuk/public_html/explora_store/comprar/index.php on line 78
+[27-Apr-2015 19:40:14 America/Detroit] PHP Parse error:  syntax error, unexpected '?>' in /home/mayaibuk/public_html/explora/_contenido/comprar2.php on line 51
+[27-Apr-2015 19:40:18 America/Detroit] PHP Parse error:  syntax error, unexpected '?>' in /home/mayaibuk/public_html/explora/_contenido/comprar2.php on line 51
+[27-Apr-2015 19:40:46 America/Detroit] PHP Parse error:  syntax error, unexpected '?>' in /home/mayaibuk/public_html/explora/_contenido/comprar2.php on line 51
