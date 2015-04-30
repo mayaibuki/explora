@@ -4,7 +4,7 @@
         <h3 class="section-heading">Artículos relacionados</h3>
         
             <div class="col-xs-6 col-sm-4 col-md-2 animated pulse">
-            	<a class="page-scroll" href="../derecho-a-sexualidad"><div class="otros_imgbg" style="background-image: url('../_img_articulos/derecho-a-sexualidad_sm.jpg');"><h5>Mujeres, explorar nuestra sexualidad es un derecho</h5>
+            	<a class="page-scroll" href="../condon"><div class="otros_imgbg" style="background-image: url('../_img_articulos/condon_sm.jpg');"><h5>¿Cómo usar un condón?</h5>
        			</div></a>
             </div>
         

@@ -48,10 +48,9 @@
 	        </div>
 	        
 			<div class="col-xs-12 col-sm-10"><!--Columna que contiene todos los articulos-->
+	        	<?php include("../condon/thumb.php"); ?>
 	        	<?php include("../histeria/thumb.php"); ?>
 	        	<?php include("../salud-con-juguetes/thumb.php"); ?>
-	        	<?php include("../vibrador_vs_consolador/thumb.php"); ?>
-	        	<?php include("../lubricante_cuerpo/thumb.php"); ?>
 
 		         
 		    </div><!-- cierre de columna que contiene articulos-->
