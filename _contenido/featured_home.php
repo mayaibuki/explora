@@ -1,11 +1,11 @@
     <div class="container">
         
 		<div class="row featured ">
-        	<a href="derecho-a-sexualidad">
+        	<a href="condon">
 			    <div class="col-sm-8 animated pulse">            	
-            		<div class="featured_left" style="background-image: url('_img_articulos/derecho-a-sexualidad_xl.jpg'); height:100%;">
-            			<h3>Mujeres, explorar nuestra sexualidad es un derecho</h3>
-            			<p class="descripcion">Reconocer la sexualidad como un factor clave en nuestras vidas y nuestra realización como seres humanos, favorece la aceptación de nosotras mismas y nos empodera en nuestra intimidad.</p>
+            		<div class="featured_left" style="background-image: url('_img_articulos/condon2_sm.jpg'); height:100%;">
+            			<h3>¿Cómo se usa un condón?</h3>
+            			<p class="descripcion">Usar un preservativo es fácil, pero hay que saber cómo hacerlo. Aquí encontraras todo lo que necesitas saber para usarlo de forma apropiada.</p>
 					</div>
 			</a>
        	</div>

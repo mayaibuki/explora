@@ -15,8 +15,8 @@
     <meta property="og:title" content="¿Cómo usar un condón?" />
     <meta property="og:site_name" content="Explora.life"/>
     <meta property="og:url" content="http://explora.life/condon/" />
-    <meta property="og:description" content="Cómo usar un preservativo es fácil, pero hay que saber cómo hacerlo. Aquí encontraras todo lo que necesitas saber para usarlo de forma apropiada." />
-    <meta property="og:image" content="http://explora.life/_img_articulos/condon_fb.jpg" />
+    <meta property="og:description" content="Usar un preservativo es fácil, pero hay que saber cómo hacerlo. Aquí encontraras todo lo que necesitas saber para usarlo de forma apropiada." />
+    <meta property="og:image" content="http://explora.life/_img_articulos/condon_fb.jpg" >
 
     <!-- twitter-->
 	<meta name="twitter:card" content="summary_large_image">
