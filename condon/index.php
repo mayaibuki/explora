@@ -76,6 +76,16 @@
             <div class="intro-text">
                 <div class="intro-heading">¿Cómo usar un condón?</div>
                 <div class="intro-lead-in">por Jorge Maya, 30 de Abril 2015</div>
+				<div class="social-share">
+					<div class="fb-like" data-href="https://www.facebook.com/ExploraLife" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+					<div class="fb-share-button" data-href="" data-layout="button"></div>
+					<div class="fb-send" data-href=""></div>
+					<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-related="explora_life" data-count="none" data-hashtags="exploralife">Twittear</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					<a href="whatsapp://send" data-text="Mira este artículo" data-href="" class="wa_btn wa_btn_s" style="display:none">WhatsApp</a>
+				</div>
+                
+
 
             </div>
         </div>
@@ -90,7 +100,7 @@
 				<h3>1. Verificar la fecha de vencimiento</h3>
 				<p>Mira la fecha de vencimiento y sólo usa condones que no estén vencidos.</p>
 				<h3>2. Revisar que haya aire en el empaque</h3>
-				<p>Los paquetes de los condones <b>NO</b> vienen empacados al vacío. Tiene aire por dentro y deben hacer un sonido al oprimirlos cono un botón. Si notas que el aire se sale al presionarlo, o no hay aire, es posible que el condón esté vencido o tenga un roto y no puedes usarlo.</p>
+				<p>Los paquetes de los condones <b>NO</b> vienen empacados al vacío. Tiene aire por dentro y deben hacer un sonido al oprimirlos como un botón. Si notas que el aire se sale al presionarlo, o no hay aire, es posible que el condón esté vencido o tenga un roto y no puedes usarlo.</p>
 				<h3>3. Abrir el empaque con cuidado</h3>
 				<p>Con la yema de los dedos, empuja el condón a un lado, dándole espacio libre por donde rasgaremos el empaque. Luego, con la yema de los dedos rasga una esquina del empaque, nunca uses tus uñas o dientes.</p>
 				<img src="como-condon.jpg" alt="como ponerse un condon o preservativo" width="100%"/>
@@ -115,18 +125,33 @@
 
     <div class="row">
         <div class="compartir">
-	        <div class=" animate buzz">
-	        	<h3>Síguenos en Facebook</h3>
-				<h3><div class="fb-page" data-href="https://www.facebook.com/exploralife" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/exploralife"><a href="https://www.facebook.com/exploralife">Explora.life</a></blockquote></div></div></h3>	
-	        
-<!--	            <h3>Compartir artículo</h3>
-	  	            <ul class="list-inline social-buttons">
+				<h3>Compartir artículo</h3>
+				
+					<div class="social-share">
+						<div class="fb-like" data-href="https://www.facebook.com/ExploraLife" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+						<div class="fb-share-button" data-href="" data-layout="button"></div>
+						<div class="fb-send" data-href=""></div>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-related="explora_life" data-count="none" data-hashtags="exploralife">Twittear</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+						<a href="whatsapp://send" data-text="Mira este artículo" data-href="" class="wa_btn wa_btn_s" style="display:none">WhatsApp</a>
+					</div>
+				
+					
+<!--	  	           <ul class="list-inline social-buttons">
 	            	<li><a href="https://www.facebook.com/sharer/sharer.php?app_id=114545895322903&sdk=joey&u=http%3A%2F%2Fexplora.life%2Fcondon%2F&display=popup&ref=plugin&src=share_button" target="_blank"><i class="fa fa-facebook"></i></a>
 	            	</li>	                
 	            	<li><a href="https://twitter.com/share" data-text="Explora este artículo sobre sexualidad:" data-via="explora_life" data-lang="es" data-count="none" data-dnt="true" target="_blank"><i class="fa fa-twitter"></i></a>
 	                </li>
 	            </ul>-->
-	        </div>
+        
+        
+        
+	        
+	        	<!--<h3>Síguenos en Facebook</h3>
+				<h3><div class="fb-page" data-href="https://www.facebook.com/exploralife" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/exploralife"><a href="https://www.facebook.com/exploralife">Explora.life</a></blockquote></div></div></h3>
+				-->	
+	        
+
         </div>
     </div>
     

@@ -75,6 +75,7 @@
 <br><br>
 
     	<?php include("../../_contenido/navigation_producto.php"); ?>
+
     	<?php include("descripcion.php"); ?>
     	<?php include("../../_contenido/newsletter.php"); ?>
     	<?php include("../../_contenido/footer.php"); ?>
