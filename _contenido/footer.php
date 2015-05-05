@@ -3,7 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <span class="copyright">Explora.life &copy; 2015</span>
+                <span class="copyright">Colombia – Explora.life &copy; 2015</span>
                 
             </div>
             <div class="col-md-4">

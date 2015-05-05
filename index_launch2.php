@@ -74,8 +74,8 @@
 <body id="page-top" class="index">
 
     	<?php include("_contenido/navigation_home.php"); ?>
-    	<?php include("_contenido/mision_header.php"); ?>
     	<br><br>
+    	<?php include("_contenido/mision.php"); ?>
     	<?php include("_contenido/featured_home.php"); ?>
     	<?php include("_contenido/promoted_products_home.php"); ?>
     	<?php include("_contenido/newsletter.php"); ?>

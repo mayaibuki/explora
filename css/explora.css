@@ -1276,14 +1276,15 @@ section#otros h5 {
     overflow:hidden;        
     background: #f7f7f7 no-repeat center center ;
     background-size: 100%;
-    margin: 15px 0;    
+	margin: 15px 0;
+	text-shadow: 0 0 6px #4a4a4a;    
 }
 
 .featured_left h3, 
 .featured_left p,
 .featured_right h3, 
 .featured_right p{
-	background: rgba(0,0,0,0.1);
+/*	background: rgba(0,0,0,0.1);*/
 	padding: 5px 0;
 	margin: 0 0 10px;
 }
@@ -1299,7 +1300,8 @@ section#otros h5 {
     overflow:hidden;        
     background: #f7f7f7 no-repeat center center ;
     background-size:  100%;
-    margin: 15px 0;    
+    margin: 15px 0; 
+	text-shadow: 0 0 6px #4a4a4a;
 }
 
 @media(min-width:768px) {
