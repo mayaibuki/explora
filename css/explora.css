@@ -18,8 +18,20 @@ body {
     color: #777;
 }
 
+.text-white {
+    color: #FFF;
+}
+
 .text-primary {
     color: #F85863;
+}
+
+.gr-background{
+    background-color: #FA61AE;
+    background: -webkit-linear-gradient(#FA61AE, #F85863); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FA61AE, #F85863); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FA61AE, #F85863); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FA61AE, #F85863); /* Standard syntax */
 }
 
 p {
@@ -1073,11 +1085,13 @@ body {
     padding-top: 10%;
     padding-bottom: 90%;
     overflow:hidden;        
-    background: #f7f7f7 no-repeat center center ;
+    background: #FFFFFF no-repeat center center ;
     background-size: auto 100%;
     margin: 15px 0;
     text-shadow: 0 0 6px #4a4a4a;
     text-align: center;
+    
+
 }
 
 .carousel_img {

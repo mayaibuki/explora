@@ -1,5 +1,5 @@
 <a class="page-scroll" href="../lubricante_cuerpo">
-    <div class="articulo thumbnail-link animated pulse col-xs-6 col-md-4">
+    <div class="articulo thumbnail-link animated pulse col-xs-6 col-sm-4 col-md-3">
         <img src="../_img_articulos/proximamente-3_sm.jpg" alt="próximamente">
         <div class="thumbnail-parrafo">
             <h4 class="service-heading">¿Cuál lubricante necesita tu cuerpo?</h4>

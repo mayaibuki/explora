@@ -1,5 +1,5 @@
 <a href="../derecho-a-sexualidad" class="text-primary">
-	<div class="articulo thumbnail-link animated pulse col-xs-6 col-sm-5 col-md-4">
+	<div class="articulo thumbnail-link animated pulse col-xs-6 col-sm-4 col-md-3">
         <img src="../_img_articulos/derecho-a-sexualidad_sm.jpg" alt="Christian Grey">
             <div class="thumbnail-parrafo">
                 <h4 class="service-heading">Mujeres, explorar nuestra sexualidad es un derecho</h4>

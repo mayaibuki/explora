@@ -5,19 +5,20 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Conoce tu cuerpo y explora</h2>
-                <h3 class="section-subheading text-muted">Explora tu cuerpo y aprende a respetarte. Conoce desde tus derechos sexuales, hasta cómo dar nalgadas</h3>
+                <h3 class="section-subheading text-muted">Explora tu cuerpo y aprende a respetarte, conoce desde tus derechos sexuales, hasta cómo dar nalgadas</h3>
             </div>
-
         </div>
+
 
 	<!-- posicion thumbnails-->
 	
 	    <div class="row">
-			<div class="categoria col-xs-6 col-sm-4 col-md-3 text-right gr-background" >
-	            <h3 class="section-heading text-white">Guía de sexualidad</h3>
-	            <p class="text-white">Artículos y videos sobre sexualidad, género, autoestima, respeto, placer y relaciones de pareja</p>
+	        <div class="categoria col-sm-offset-0 col-sm-2">
+	            <h4 class="section-heading text-muted">Guía de sexualidad</h4>
+	            <p class="text-muted">Artículos y videos sobre sexualidad, género, autoestima, respeto, placer y relaciones de pareja</p>
 	        </div>
 	        
+			<div class="col-xs-12 col-sm-10"><!--Columna que contiene todos los articulos-->
 
 	        	<?php include("../derecho-a-sexualidad/thumb.php"); ?>
 	        	<?php include("../squirt/thumb.php"); ?>
@@ -26,6 +27,7 @@
 	        	<?php include("../que-vemos-chris-grey/thumb.php"); ?>
 	        	<?php include("../adopcion_igualitaria/thumb.php"); ?>
 
+		    </div><!-- cierre de columna que contiene articulos-->
     
 	    
 		</div><!-- cierre row -->
@@ -40,13 +42,20 @@
 	<!-- posicion thumbnails-->
 	
 	    <div class="row">
-	        <div class="categoria col-xs-6 col-sm-4 col-md-3 text-right gr-background">
-	            <h3 class="section-heading text-white">Guía de sex toys</h3>
-	            <p class="text-white">Artículos y videos sobre vibradores, anillos, lencería, látigos y cómo usarlos</p>
+	        <div class="categoria col-sm-offset-0 col-sm-2">
+	            <h4 class="section-heading text-muted">Guía de sex-toys</h4>
+	            <p class="text-muted">Artículos y videos sobre vibradores, anillos, lencería, látigos y cómo usarlos</p>
 	        </div>
+	        
+			<div class="col-xs-12 col-sm-10"><!--Columna que contiene todos los articulos-->
 	        	<?php include("../condon/thumb.php"); ?>
 	        	<?php include("../histeria/thumb.php"); ?>
-	        	<?php include("../salud-con-juguetes/thumb.php"); ?>	    
+	        	<?php include("../salud-con-juguetes/thumb.php"); ?>
+
+		         
+		    </div><!-- cierre de columna que contiene articulos-->
+    
+	    
 		</div><!-- cierre row -->
 	</div><!-- cierre container -->
 </section>

@@ -71,7 +71,6 @@
 <body id="page-top" class="index">
 
 
-<br><br>
 
     	<?php include("../_contenido/navigation_comprar.php"); ?>
     	<?php include("../_contenido/comprar2.php"); ?>

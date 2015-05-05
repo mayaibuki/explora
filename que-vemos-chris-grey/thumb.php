@@ -1,5 +1,5 @@
 <a href="../que-vemos-chris-grey" class="text-primary">
-	<div class="articulo thumbnail-link animated pulse col-xs-6 col-sm-5 col-md-4">
+	<div class="articulo thumbnail-link animated pulse col-xs-6 col-sm-4 col-md-3">
         <img src="../_img_articulos/grey_reading_sm.jpg" alt="Christian Grey">
             <div class="thumbnail-parrafo">
                 <h4 class="service-heading">¿Qué le vemos a Christian Grey?</h4>

@@ -1,25 +1,26 @@
-<section id="indice">
-	<div class="container">
+
+<!--comprar Header -->
+<div  style="background-image:url('../_img_website/sky.jpg');">
+<br><br>
+	<section id="indice">
 	    <div class="row">
-		    <div class="col-lg-12">
-				<p class="section-parrafo text-muted">Categorías: 
-				<a class="page-scroll" href="#vibradores">Vibradores</a>,
-				<a class="page-scroll" href="#consoladores">Consoladores</a>,
-				<a class="page-scroll" href="#lubricantes">Lubricantes</a>,
-				<a class="page-scroll" href="#anillos">Anillos</a> o
-				<a class="page-scroll" href="#fetiche">Fetiche</a>
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-5 text-center">
+            	<h3 class="section-parrafo text-white">Conoce los distintos productos para mejorar tu bienestar sexual y la intimidad con tu pareja de una manera saludable y sobre todo, divertida</h3>
+	        </div>
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-5 text-center">	
+					<h3 class="text-white text-center">Categorías:</h3>
+				<p class="text-center large">
+					<a class="page-scroll" href="#vibradores">Vibradores</a><br>
+					<a class="page-scroll" href="#consoladores">Consoladores</a><br>
+					<a class="page-scroll" href="#lubricantes">Lubricantes</a><br>
+					<a class="page-scroll" href="#anillos">Anillos</a><br>
+					<a class="page-scroll" href="#Benwaballs">Ben Wa Balls</a><br>
+					<a class="page-scroll" href="#fetiche">Fetiche</a>
 				</p>
-		    </div>
+	        </div>
 	    </div>
-	    <div class="row">
-		    <div class="col-md-8 col-md-offset-2">
-                <h3 class="section-parrafo text-muted text-center">Conoce los distintos productos para mejorar tu bienestar sexual y la intimidad con tu pareja de una manera saludable y sobre todo, divertida</h3>
-		    </div>
-	    </div>
-	</div>
-</section>
-
-
+	</section>
+</div>
 
 <!--vibradores -->
 <section id="vibradores" class="bg-light-gray" >
@@ -28,10 +29,10 @@
 	        <div class="titulo col-xs-12">
 		        <h2 class="section-heading">Vibradores</h2>
 	        </div>
-	        <div class="imagen col-md-6">
-				<img src="../_img_productos/Siri_md.jpg" alt="mia_petal_pink_mood_sm" width="100%" height="" />
+	        <div class="imagen col-xs-12 col-sm-6 col-md-4">
+				<img src="../_img_productos/Siri_sq.jpg" alt="Vibrador" width="100%" height="" />
 	        </div>
-	        <div class="col-md-6">
+	        <div class="col-xs-12 col-sm-6 col-md-8">
 		        <p class="descripcion">El vibrador es un juguete que puedes utilizar <b>con tu pareja</b> o <b>por ti mismo</b> para obtener mayor placer sexual.
 		        <p class="descripcion">Se caracteriza por vibrar, normalmente están diseñados para entrar en la vagina, aunque muchas personas obtienen <b>mayor placer</b> cuando lo usan en el exterior (clítoris, labios, ano, pene, periné).</p>
 		        <p class="descripcion">La mayoría de mujeres necesitan estimulación en el clítoris para alcanzar un <b>orgasmo</b> y la vibración es una forma muy fácil para estimular tu cuerpo.</p>
@@ -56,7 +57,18 @@
 			<?php include("../comprar/lelo-ida/thumb.php"); ?>
 			<?php include("../comprar/fing-o/thumb.php"); ?>
 			<?php include("../comprar/fing-o-tips/thumb.php"); ?>
-
+			<div class="col-xs-6 col-sm-4 col-md-2 animated pulse">
+				<a class="page-scroll" href="../comprar/vibradores">
+			    	<div class="otros_imgbg" style="			    	
+					background: -webkit-linear-gradient(#FA61AE, #F85863);
+				    background: -o-linear-gradient(#FA61AE, #F85863);
+				    background: -moz-linear-gradient(#FA61AE, #F85863);
+				    background: linear-gradient(#FA61AE, #F85863);">
+			    		<p class="text-white">Ver más</p>
+						<h4 class="section-heading text-white">Vibradores</h4>
+			    	</div>
+				</a>
+			</div>
 	    </div>
 	</div>
 </section>
@@ -68,10 +80,10 @@
 	        <div class="titulo col-xs-12">
 		        <h2 class="section-heading">Consoladores</h2>
 	        </div>
-	        <div class="imagen col-md-6">
+	        <div class="imagen col-xs-12 col-sm-6 col-md-4">
 				<img src="../_img_productos/SmartWand_black_md.jpg" alt="Consolador" width="100%"/>
 	        </div>
-	        <div class="descripcion col-md-6">
+	        <div class="col-xs-12 col-sm-6 col-md-8">
 		        <p class="descripcion">El consolador (también llamado <b>dildo</b>) es un complemento de forma fálica que puedes usar en la <b>masturbación</b> o en <b>relaciones sexuales</b>, los hay en distintas formas para distintos propósitos:</p>
 		        <li><p class="descripcion">Los <b>vaginales</b> son los más comunes y están diseñados para generar placer por medio de la fricción por repetidas penetraciones</p></li>
 		        <li><p class="descripcion">Los <b>anales</b> (<i>Butt plug</i>) están diseñados para permanecer quietos en el ano generando presión</p></li>
@@ -91,10 +103,10 @@
 	        <div class="titulo col-xs-12">
 		        <h2 class="section-heading">Lubricantes</h2>
 	        </div>
-	        <div class="imagen col-md-6">
+	        <div class="imagen col-xs-12 col-sm-6 col-md-4">
 				<img src="../_img_productos/lube_sm.jpg" alt="Lubricante" width="100%"/>
 	        </div>
-	        <div class="descripcion col-md-6">
+	        <div class="col-xs-12 col-sm-6 col-md-8">
 		        <p class="descripcion">Es la manera más fácil de mejorar el sexo y nunca sobra. Los lubricantes son líquidos usados durante las relaciones sexuales o la masturbación para <b>facilitar la penetración</b>. También los puedes aplicar en todo el cuerpo para incrementar la sensación táctil</p>
 		        <p class="descripcion">Es obligatorio en muchos casos, ya sea porque necesitas más lubricación para <b>evitar el dolor</b> o porque quieres <b>mayor sensación</b></p>
 		        <li><p class="descripcion">Los <b>lubricantes a base de agua</b> son fáciles de remover con agua, pero tendrás que volverlo a aplicar después de unas horas de uso, son seguros para la vagina</p></li>
@@ -112,10 +124,10 @@
 	        <div class="titulo col-xs-12">
 		        <h2 class="section-heading">Anillos</h2>
 	        </div>
-	        <div class="imagen col-md-6">
+	        <div class="imagen col-xs-12 col-sm-6 col-md-4">
 				<img src="../_img_productos/TorII_mood_md.jpg" alt="Anillos" width="100%"/>
 	        </div>
-	        <div class="descripcion col-md-6">
+	        <div class="col-xs-12 col-sm-6 col-md-8">
 		        <p class="descripcion">Los <b>anillos</b> son vibradores que se usan en el pene, aveces en los testículos. Muy populares porque puedes usarlo con las manos libres. Restringen el flujo de sangre que sale del pene, pero permite que la sangre entre, brindando una erección más <b>rígida</b> y <b>duradera</b>, además de una sensación muy agradable de presión.</p>
 		        <li><p class="descripcion">Los <b>anillos ajustables</b> son como cinturones en los que puedes ajustar la presión que se ejerce en el pene, son recomendados para principiantes.</p></li>
 		        <li><p class="descripcion">Los <b>anillos para parejas</b> también estimulan el clítoris y muchos <b>vibran</b>, dándo la capacidad a tu pene de estar más rígido, más tiempo y estimular el clitoris de tu pareja al igual que un vibrador.</p></li>
@@ -134,10 +146,10 @@
 	        <div class="titulo col-xs-12">
 		        <h2 class="section-heading">Fetiche</h2>
 	        </div>
-	        <div class="imagen col-md-6">
+	        <div class="imagen col-xs-12 col-sm-6 col-md-4">
 				<img src="../_img_productos/whip_md.jpg" alt="Fetichismo" width="100%" height="" />
 	        </div>
-	        <div class="descripcion col-md-6">
+	        <div class="col-xs-12 col-sm-6 col-md-8">
 		        <p class="descripcion">El fetichismo es cualquier fijación o atracción a objetos o actividades que no sexuales normalmente. Todas las personas tenemos algún tipo de fetiche, no te preocupes, <b>es sano</b> y <b>completamente normal</b>. Los fetiches se dividen en: 
 		        <li><p class="descripcion"><b>Objetos</b>, por ejemplo la ropa de latex, los tacones altos o las medias veladas</p></li>
 		        <li><p class="descripcion"><b>Partes del cuerpo</b>, como la atracción a los pies, a los hombros, a la pantorrilla o a los tatuajes</p></li>
