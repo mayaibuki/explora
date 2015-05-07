@@ -15,7 +15,7 @@
 	    <div class="row">
 			<div class="categoria col-xs-6 col-sm-4 col-md-3 text-right gr-background" >
 	            <h3 class="section-heading text-white">Guía de sexualidad</h3>
-	            <p class="text-white">Artículos y videos sobre sexualidad, género, autoestima, respeto, placer y relaciones de pareja</p>
+	            <p class="text-white">Artículos sobre sexualidad, igualdad, género, autoestima, respeto y relaciones de pareja</p>
 	        </div>
 	        
 
@@ -42,7 +42,8 @@
 	    <div class="row">
 	        <div class="categoria col-xs-6 col-sm-4 col-md-3 text-right gr-background">
 	            <h3 class="section-heading text-white">Guía de sex toys</h3>
-	            <p class="text-white">Artículos y videos sobre vibradores, anillos, lencería, látigos y cómo usarlos</p>
+	            <p class="text-white">Artículos sobre juguetes sexuales, sexo, relaciones de pareja, placer, independencia y autoestima
+	            </p>
 	        </div>
 	        	<?php include("../condon/thumb.php"); ?>
 	        	<?php include("../histeria/thumb.php"); ?>
