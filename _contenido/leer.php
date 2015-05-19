@@ -19,6 +19,7 @@
 	        </div>
 	        
 
+	        	<?php include("../que-es-tuppersex/thumb.php"); ?>
 	        	<?php include("../derecho-a-sexualidad/thumb.php"); ?>
 	        	<?php include("../squirt/thumb.php"); ?>
 	        	<?php include("../sexo-consensual/thumb.php"); ?>

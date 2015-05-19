@@ -1,11 +1,11 @@
     <div id="home" class="container">
         
 		<div class="row featured ">
-        	<a href="condon">
+        	<a href="que-es-tuppersex">
 			    <div class="col-sm-8 animated pulse">   
-            		<div class="featured_left animated pulse" style="background-image: url('_img_articulos/condon2_sm.jpg'); height:100%;">
-            			<h3>¿Cómo se usa un condón?</h3>
-            			<p class="descripcion">Aquí encontraras todo lo que necesitas saber para usarlo de forma apropiada</p>
+            		<div class="featured_left animated pulse" style="background-image: url('_img_articulos/sexandcity2_md.jpg'); height:100%;">
+            			<h3>¿Qué es un TupperSex?</h3>
+            			<p class="descripcion">El TupperSex es como una pijamada entre amigas, pero versión adulta</p>
 					</div>
 			</a>
        	</div>

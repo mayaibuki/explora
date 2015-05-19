@@ -8,7 +8,7 @@
             </div>
             <div class="col-md-4">
                 <ul class="list-inline social-buttons">
-                    <li><a href="http://twitter.com/explora_life"><i class="fa fa-twitter"></i></a>
+                    <li><a href="http://twitter.com/explora_life" target="_blank"><i class="fa fa-twitter"></i></a>
                     </li>
                     <li><a href="https://www.facebook.com/pages/Explora/580790612021748" target="_blank"><i class="fa fa-facebook-square"></i></a>
                     </li>
