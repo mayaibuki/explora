@@ -1,1 +1,6 @@
 ErrorDocument 404 /404/index.php
+RewriteEngine On
+RewriteRule ^comprar/(.*)/$ producto.php?slug=$1 [L]
+RewriteRule ^admin/editar/producto/(.*)$ admin/editar-producto.php?slug=$1 [L]
+RewriteRule ^admin/editar/categoria/(.*)$ admin/editar-categoria.php?slug=$1 [L]
+RewriteRule ^admin/editar/atributo/(.*)$ admin/editar-atributo.php?id=$1 [L]
