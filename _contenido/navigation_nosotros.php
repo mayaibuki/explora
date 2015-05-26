@@ -20,10 +20,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="../comprar/">Comprar</a>
+                        <a class="page-scroll" href="/comprar/">Comprar</a>
                     </li>     
                     <li>
-                        <a class="page-scroll" href="../leer/">Leer</a>
+                        <a class="page-scroll" href="/leer/">Leer</a>
                     </li>
                     <!--<li>
                         <a class="page-scroll" href="#">Compra</a>
@@ -35,7 +35,7 @@
                         <a class="page-scroll" href="#contact">Contáctanos</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="../pagar/"><i class="fa fa-shopping-cart"></i>
+                                  <a class="page-scroll" href="/cart"><?php if($_SESSION["count"]>0){ echo $_SESSION["count"]; } ?><i class="fa fa-shopping-cart"></i>
 </a>
                     </li>
                 </ul>

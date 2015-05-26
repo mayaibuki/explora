@@ -14,7 +14,7 @@
                     </li>
                     <!--<li><a href="http://exploralife.tumblr.com" target="_blank"><i class="fa fa-tumblr-square"></i></a>
                     </li>-->                        
-                    <li><a href="http://instagram.com/explora.life" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <li><a href="http://instagram.com/exploralife" target="_blank"><i class="fa fa-instagram"></i></a>
                     </li>
                     <!--<li><a href="http://www.youtube.com/channel/UC2MFOJf3qIT3_4cy7h40m_Q" target="_blank"><i class="fa fa-youtube-play"></i></a>
                     </li>-->

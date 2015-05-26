@@ -1,4 +1,4 @@
-
+<?php session_start() ?>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -10,8 +10,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-logo page-scroll" href="../"><img src="../_img_icons/logo.svg"></a>
-                <a class="navbar-brand page-scroll" href="../">Explora.life</a>
+                <a class="navbar-logo page-scroll" href="/"><img src="/_img_icons/logo.svg"></a>
+                <a class="navbar-brand page-scroll" href="/">Explora.life</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -21,7 +21,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="../comprar/">Comprar</a>
+                        <a class="page-scroll" href="/comprar/">Comprar</a>
                     </li>     
                     <li>
                         <a class="page-scroll" href="#page-top">Leer</a>
@@ -30,13 +30,13 @@
                         <a class="page-scroll" href="#">Compra</a>
                     </li>-->
                     <li>
-                        <a class="page-scroll" href="../nosotros/">Nosotros</a>
+                        <a class="page-scroll" href="/nosotros/">Nosotros</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Suscríbete</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="../pagar/"><i class="fa fa-shopping-cart"></i>
+                        <a class="page-scroll" href="/cart"><?php if($_SESSION["count"]>0){ echo $_SESSION["count"]; } ?><i class="fa fa-shopping-cart"></i>
 </a>
                     </li>
                     

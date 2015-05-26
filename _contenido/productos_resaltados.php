@@ -5,12 +5,37 @@
         
         
         
-			<?php include("../charlie-tango/thumb.php"); ?>
-			<?php include("../tickler/thumb.php"); ?>
-			<?php include("../lelo-mia-2/thumb.php"); ?>
-			<?php include("../we-vibe-4/thumb.php"); ?>
-			<?php include("../lelo-ida/thumb.php"); ?>
-			<?php include("../fing-o/thumb.php"); ?>
+            <div class="col-xs-6 col-sm-4 col-md-2 animated pulse">
+            	<a class="page-scroll" href="#"><div class="otros_imgbg" style="background-image: url('../../_img_productos/mia_petal_pink.jpg');"><h5>LELO<br> Mia Metal Pink</h5>
+       			</div>
+       			<p class="text-center">$160.000</p></a>
+            </div>
+            
+            <div class="col-xs-6 col-sm-4 col-md-2 animated pulse">
+            	<a class="page-scroll" href="#"><div class="otros_imgbg" style="background-image: url('../../_img_productos/mia_petal_pink.jpg');"><h5>LELO<br> Mia Metal Pink</h5>
+       			</div>
+       			<p class="text-center">$160.000</p></a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2 animated pulse">
+            	<a class="page-scroll" href="#"><div class="otros_imgbg" style="background-image: url('../../_img_productos/mia_petal_pink.jpg');"><h5>LELO<br> Mia Metal Pink</h5>
+       			</div>
+       			<p class="text-center">$160.000</p></a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2 animated pulse">
+            	<a class="page-scroll" href="#"><div class="otros_imgbg" style="background-image: url('../../_img_productos/mia_petal_pink.jpg');"><h5>LELO<br> Mia Metal Pink</h5>
+       			</div>
+       			<p class="text-center">$160.000</p></a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2 animated pulse">
+            	<a class="page-scroll" href="#"><div class="otros_imgbg" style="background-image: url('../../_img_productos/mia_petal_pink.jpg');"><h5>LELO<br> Mia Metal Pink</h5>
+       			</div>
+       			<p class="text-center">$160.000</p></a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-2 animated pulse">
+            	<a class="page-scroll" href="#"><div class="otros_imgbg" style="background-image: url('../../_img_productos/mia_petal_pink.jpg');"><h5>LELO<br> Mia Metal Pink</h5>
+       			</div>
+       			<p class="text-center">$160.000</p></a>
+            </div>
 
         </div> 
     </div>

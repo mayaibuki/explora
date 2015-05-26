@@ -1,3 +1,4 @@
+<?php session_start() ?>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -20,22 +21,22 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="../comprar/">Comprar</a>
+                        <a class="page-scroll" href="/comprar/">Comprar</a>
                     </li>     
                     <li>
-                        <a class="page-scroll" href="../leer/#page-top"><span class="text-primary"><u>Leer</u></span></a>
+                        <a class="page-scroll" href="/leer/#page-top"><span class="text-primary"><u>Leer</u></span></a>
                     </li>
                     <!--<li>
                         <a class="page-scroll" href="#">Compra</a>
                     </li>-->
                     <li>
-                        <a class="page-scroll" href="../nosotros/">Nosotros</a>
+                        <a class="page-scroll" href="/nosotros/">Nosotros</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Suscríbete</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="../pagar/"><i class="fa fa-shopping-cart"></i>
+                                          <a class="page-scroll" href="/cart"><?php if($_SESSION["count"]>0){ echo $_SESSION["count"]; } ?><i class="fa fa-shopping-cart"></i>
 </a>
                     </li>                </ul>
             </div>

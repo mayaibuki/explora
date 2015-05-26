@@ -9,8 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-logo page-scroll" href="#page-top"><img src="_img_icons/logo.svg"></a>
-                <a class="navbar-brand page-scroll" href="#page-top">Explora.life</a>
+                <a class="navbar-logo page-scroll" href="#page-top"><img src="/_img_icons/logo.svg"></a><a class="navbar-brand page-scroll" href="#page-top">Explora.life</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -20,21 +19,21 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="comprar/">Comprar</a>
+                        <a class="page-scroll" href="/comprar/">Comprar</a>
                     </li>                    
                     <li>
-                        <a class="page-scroll" href="leer/">Leer</a>
+                        <a class="page-scroll" href="/leer/">Leer</a>
                     </li>
 
                     <li>
-                        <a class="page-scroll" href="nosotros/">Nosotros</a>
+                        <a class="page-scroll" href="/nosotros/">Nosotros</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Suscríbete</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="pagar/"><i class="fa fa-shopping-cart"></i>
-</a>
+                        <a class="page-scroll" href="/cart"><?php if($_SESSION["count"]>0){ echo $_SESSION["count"]; } ?><i class="fa fa-shopping-cart"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
