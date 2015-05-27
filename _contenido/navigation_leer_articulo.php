@@ -24,7 +24,7 @@
                         <a class="page-scroll" href="/comprar/">Comprar</a>
                     </li>     
                     <li>
-                        <a class="page-scroll" href="/leer/#page-top"><span class="text-primary"><u>Leer</u></span></a>
+                        <a class="page-scroll" href="/leer/#page-top">Leer</a>
                     </li>
                     <!--<li>
                         <a class="page-scroll" href="#">Compra</a>
@@ -36,9 +36,10 @@
                         <a class="page-scroll" href="#contact">Suscríbete</a>
                     </li>
                     <li>
-                                          <a class="page-scroll" href="/cart"><?php if($_SESSION["count"]>0){ echo $_SESSION["count"]; } ?><i class="fa fa-shopping-cart"></i>
-</a>
-                    </li>                </ul>
+                        <a class="page-scroll btn btn-cart" href="/cart"> <i class="fa fa-shopping-cart"> <?php if($_SESSION["count"]>0){ echo $_SESSION["count"]; } ?></i>
+						</a>
+                    </li>                
+				</ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>

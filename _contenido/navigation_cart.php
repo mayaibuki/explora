@@ -20,19 +20,7 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="/comprar/">Comprar</a>
-                    </li>     
-                    <li>
-                        <a class="page-scroll" href="/leer/">Leer</a>
-                    </li>
-                    <!--<li>
-                        <a class="page-scroll" href="#">Compra</a>
-                    </li>-->
-                    <li>
-                        <a class="page-scroll" href="/nosotros/">Nosotros</a>
-                    </li>
-                    <li>
+                                       <li>
                         <a class="page-scroll" href="#contact">Suscríbete</a>
                     </li>
                     <li>

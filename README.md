@@ -1,2 +1,0 @@
-# explora
-read me file

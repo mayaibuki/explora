@@ -117,7 +117,7 @@ include '../_contenido/navigation_comprar.php';
               <tfoot>
                 <tr>
                   <td colspan="2">
-                    Transacciones realizadas con tarjeta de credito pueden tomar hasta 4 horas en ser validadas dependiendo de la entidad bancaria
+                    Transacciones realizadas con tarjeta de crédito pueden tomar hasta 4 horas en ser validadas dependiendo de la entidad bancaria
                   </td>
                 </tr>
                 <tr>

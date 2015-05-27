@@ -1,57 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="100px" height="100px" viewBox="5.0 -10.0 100.0 135.0" enable-background="new 0 0 100 100" xml:space="preserve">
-<g id="Paint_1_">
-</g>
-<g id="Time">
-</g>
-<g id="Peg">
-</g>
-<g id="Peg_2">
-</g>
-<g id="Spray">
-</g>
-<g id="Service">
-</g>
-<g id="Green_Tea">
-</g>
-<g id="Dispenser">
-</g>
-<g id="Handheld_Vacuum">
-</g>
-<g id="Fan">
-</g>
-<g id="Glitter">
-</g>
-<g id="ID">
-</g>
-<g id="Security">
-</g>
-<g id="Security_2">
-</g>
-<g id="Work">
-</g>
-<g id="Calculator">
-</g>
-<g id="Workflow">
-</g>
-<g id="Crowd">
-</g>
-<g id="Apple">
-</g>
-<g id="Digital">
-</g>
-<g id="Umbrella">
-</g>
-<g id="Spade">
-</g>
-<g id="Cracked">
-</g>
-<g id="All_Weather">
-</g>
-<g id="Target">
-</g>
-<g id="Factory">
-</g>
-<g id="Plug">
-	<path d="M58.793,95l2.683-8.2c11.788-2.636,20.495-11.858,20.495-22.83V34.921h-8.966V9.892C73.005,7.19,70.459,5,67.319,5   c-3.138,0-5.684,2.19-5.684,4.892v25.029H38.902V9.892C38.902,7.19,36.356,5,33.217,5s-5.684,2.19-5.684,4.892v25.029h-9.504V63.97   c0,11.086,8.889,20.382,20.864,22.907L41.033,95H58.793z"/>
-</g>
-<text x="0.0" y="117.5" font-size="5.0" font-weight="bold" font-family="Helvetica Neue, Helvetica, Arial-Unicode, Arial, Sans-serif" fill="#000000">Created by Alex Kwa</text><text x="0.0" y="122.5" font-size="5.0" font-weight="bold" font-family="Helvetica Neue, Helvetica, Arial-Unicode, Arial, Sans-serif" fill="#000000">from the Noun Project</text></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="15px" height="20px" viewBox="0 0 15 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>Plug</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="noun_33432_cc" sketch:type="MSLayerGroup" transform="translate(-9.000000, -6.000000)">
+            <g id="Page-1" sketch:type="MSShapeGroup">
+                <g id="noun_33432_cc">
+                    <g id="Plug">
+                        <rect id="Rectangle-1" x="0" y="0" width="32" height="32"></rect>
+                        <path d="M18.5608594,26 L19.1896875,24.1777778 C21.9525,23.592 23.9932031,21.5426667 23.9932031,19.1044444 L23.9932031,12.6491111 L21.8917969,12.6491111 L21.8917969,7.08711111 C21.8917969,6.48666667 21.2950781,6 20.5591406,6 C19.8236719,6 19.2269531,6.48666667 19.2269531,7.08711111 L19.2269531,12.6491111 L13.8989062,12.6491111 L13.8989062,7.08711111 C13.8989062,6.48666667 13.3021875,6 12.5664844,6 C11.8307812,6 11.2342969,6.48666667 11.2342969,7.08711111 L11.2342969,12.6491111 L9.00679687,12.6491111 L9.00679687,19.1044444 C9.00679687,21.568 11.0901562,23.6337778 13.8967969,24.1948889 L14.3983594,26 L18.5608594,26 L18.5608594,26 Z" id="Shape" fill="#000000"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

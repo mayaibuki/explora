@@ -122,7 +122,7 @@ session_start();
     <!--vibradores -->
     <section id="<?php echo $row['slug'] ?>" class="" >
         <div class="container">     
-            <div class="row description-cat">
+            <div class="row">
                 <div class="titulo col-xs-12">
                     <h2 class="section-heading"><?php echo $row['name'] ?></h2>
                 </div>
@@ -130,7 +130,9 @@ session_start();
                     <img src="<?php echo $row['img'] ?>" alt="<?php echo $row['name'] ?>" width="100%" height="" />
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-8">
-                    <?php echo $row['description'] ?>
+                	<div class="description-cat">
+	                    <?php echo $row['description'] ?>
+                	</div>
                 </div>  
             </div>
             <div class="row productos-cat">

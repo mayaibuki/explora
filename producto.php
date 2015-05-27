@@ -70,7 +70,7 @@ while($row = $result->fetch_assoc()) {
   <!--vibradores -->
   <section id="vibradores" class="bg-light-gray" >
     <div class="container">     
-      <div class="row description-cat">
+      <div class="row ">
         <div class="imagen col-sm-4">
           <?php 
           $imgs = $mysqli->query("SELECT * FROM product_img WHERE product_id='$product_id'");
@@ -287,7 +287,7 @@ where p.product_id = '$product_id'");
               <img src="<?php echo $root; ?>_img_website/pse.png" height="42px" alt="Pagos seguro en línea"/> <img src="<?php echo $root; ?>_img_website/payulatam.png" height="42px" alt="PayU latam"/>              
               <p class="descripcion">o transferencia bancaria.</p>
               <p class="descripcion">Todos los métodos de pago son <b>seguros</b>. Te enviaremos un e-mail con la confirmación cuando recibamos tu pago, otro cuando te enviemos la mercancía (paquete discreto) y uno final para asegurarnos de que hayas recibido el producto con satisfacción</p>
-              <p class="descripcion">Si tienes alguna pregunta, envía un e-mail a <a href="mailto:pedidos@explora.life">pedidos@explora.life</a> o por WhatsApp al <a href="tel:+57-311-584-1563">+57 (311) 584-1563</a></p> 
+              <p class="descripcion">Si tienes alguna pregunta, envía un e-mail a <a href="mailto:pedidos@explora.life">pedidos@explora.life</a> o por WhatsApp al <a href="tel:+57-316-874-9597">+57 (316) 874 9597</a></p> 
 
             </div>
             <div class="col-md-6">

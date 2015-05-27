@@ -24,7 +24,7 @@
             </div>
             <div class="col-md-4">
                 <ul class="list-inline quicklinks">
-					<li><a href="tel:+57-311-584-1563"><i class="fa fa-whatsapp"></i> (311) 584-1563</li>
+					<li><a href="tel:+573168749597"><i class="fa fa-whatsapp"></i> (316) 874 9597</li>
 					
 					<li><a href="mailto:hola@explora.life"><i class="fa fa-comment-o"></i> hola@explora.life</a>
                     </li>                    

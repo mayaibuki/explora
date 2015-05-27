@@ -35,8 +35,8 @@
                         <a class="page-scroll" href="#contact">Suscríbete</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/cart"><?php if($_SESSION["count"]>0){ echo $_SESSION["count"]; } ?><i class="fa fa-shopping-cart"></i>
-</a>
+                        <a class="page-scroll btn btn-cart" href="/cart"> <i class="fa fa-shopping-cart"> <?php if($_SESSION["count"]>0){ echo $_SESSION["count"]; } ?></i>
+						</a>
                     </li>
                 </ul>
             </div>
