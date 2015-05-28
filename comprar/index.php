@@ -120,7 +120,7 @@ session_start();
   while($row = $result->fetch_assoc()) {
     ?>
     <!--vibradores -->
-    <section id="<?php echo $row['slug'] ?>" class="" >
+    <section id="<?php echo $row['slug'] ?>" class="bg-gradient-gray" >
         <div class="container">     
             <div class="row">
                 <div class="titulo col-xs-12">
@@ -135,36 +135,42 @@ session_start();
                 	</div>
                 </div>  
             </div>
+            
             <div class="row productos-cat">
-                <?php
-                $cat_id=$row['category_id'];
-                $p_result = $mysqli->query("SELECT * FROM product WHERE category_id='$cat_id' AND stock>0 GROUP BY color_code");
-                if (!$p_result) {
-                  die('Could not query:' . mysqli_error());
-              }
-              while($p_row = $p_result->fetch_assoc()) {
-                $product_id = $p_row['product_id'];
-                ?>
-                <a href="/comprar/<?php echo $p_row['slug']; ?>/">
-                    <div class="col-xs-6 col-sm-3 col-md-2">
-                        <?php
-                        $imgs = $mysqli->query("SELECT * FROM product_img WHERE product_id='$product_id'");
-                        $count = 0;
-                        while ($img =  $imgs->fetch_assoc()) {
-                            if($count==0){
-                                echo '<div class="otros_imgbg animated pulse" style="background-image: url(/media/timthumb.php?src='. $img['full_img'] .'&w=200)"><h5>'.$p_row['name'].'</h5> </div><p class="text-center">$'.$p_row['price'].'</p>'; 
-                            }
-                            $count++;
-                        }
-                        ?>
-                    </div>
-                </a>
-                <?php
-            }
-            ?>
-        </div>
-    </div>
-</section>
+            	<div class="col-lg-offset-1 col-lg-10">
+	
+		            <?php
+		                $cat_id=$row['category_id'];
+		                $p_result = $mysqli->query("SELECT * FROM product WHERE category_id='$cat_id' AND stock>0 GROUP BY color_code");
+		                if (!$p_result) {
+		                  die('Could not query:' . mysqli_error());
+		              }
+		              while($p_row = $p_result->fetch_assoc()) {
+		                $product_id = $p_row['product_id'];
+		                ?>
+			                <a href="/comprar/<?php echo $p_row['slug']; ?>/">
+			                    <div class="col-xs-6 col-sm-4 col-md-3 animated pulse">
+			                        <?php
+			                        $imgs = $mysqli->query("SELECT * FROM product_img WHERE product_id='$product_id'");
+			                        $count = 0;
+			                        while ($img =  $imgs->fetch_assoc()) {
+			                            if($count==0){
+			                                echo '<div class="otros_imgbg" style="background-image: url(/media/timthumb.php?src='. $img['full_img'] .'&w=200)">  </div>
+			                                <h5 class="text-center text-muted product-name">'.$p_row['name'].'</h5>
+			                                <p class="text-center">$'.$p_row['price'].'</p>'; 
+			                            }
+			                            $count++;
+			                        }
+			                        ?>
+			                    </div>
+			                </a>
+		                <?php
+		            }
+		            ?>
+	            </div>
+	        </div>
+	    </div>
+	</section>
 <?php
 }
 ?>

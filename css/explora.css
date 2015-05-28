@@ -125,6 +125,27 @@ h6 {
     background-color: #4A4A4A;
 }
 
+.bg-gradient-gray{
+	/* fallback */
+	background-color: #FFFFFF;
+	background-repeat: repeat-x;
+	
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#f7f7f7));
+	
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #FFFFFF, #f7f7f7);
+	
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #FFFFFF, #f7f7f7);
+	
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #FFFFFF, #f7f7f7);
+	
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #FFFFFF, #f7f7f7);
+}
+
 .btn-primary {
     border-color: #F85863;
     text-transform: uppercase;
@@ -1370,10 +1391,15 @@ section#otros h5 {
 	column-rule: 2px solid #f7f7f7;
 }
 
-/*.descripcion h3 {
-    margin: 10px 0 20px 0;
+.productos-cat{
+	padding: 50px 0 0 0;
+}
 
-}*/
+.product-name{
+	max-height: 2em;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
 	
 .thumb_products{
 	color: #FFF;

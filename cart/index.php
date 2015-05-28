@@ -127,34 +127,33 @@ include '../_contenido/navigation_producto.php';
         <div class="form-group">
           <label>Ciudad de envío</label>
           <input required name="shippingCity" type="text" class="form-control" placeholder="Bogotá, Medellín, Cartagena, Barranquilla, Cali...">
-          <p class="text-muted">*Solo envíos a Colombia, por ahora…</p>
         </div>
         <div class="form-group">
           <label>Pais de envío</label>
           <select id="shippingCountry" name="countries" class="form-control" required>
-            <option value="AR">Argentina (Próximamente)</option>
-            <option value="BO">Bolivia (Próximamente)</option>
-            <option value="BR">Brazil (Próximamente)</option>
-            <option value="CL">Chile (Próximamente)</option>
+            <option value="AR">Argentina</option>
+            <option value="BO">Bolivia</option>
+            <option value="BR">Brazil</option>
+            <option value="CL">Chile</option>
             <option value="CO" selected>Colombia</option>
-            <option value="CR">Costa Rica (Próximamente)</option>
-            <option value="CU">Cuba (Próximamente)</option>
-            <option value="DO">Dominican Republic (Próximamente)</option>
-            <option value="GF">French Guiana (Próximamente)</option>
-            <option value="GD">Grenada (Próximamente)</option>
-            <option value="GT">Guatemala (Próximamente)</option>
-            <option value="GY">Guyana (Próximamente)</option>
-            <option value="HT">Haiti (Próximamente)</option>
-            <option value="HN">Honduras (Próximamente)</option>
-            <option value="JM">Jamaica (Próximamente)</option>
-            <option value="MX">Mexico (Próximamente)</option>
-            <option value="NI">Nicaragua (Próximamente)</option>
-            <option value="PY">Paraguay (Próximamente)</option>
-            <option value="PE">Peru (Próximamente)</option>
-            <option value="US">United States (Próximamente)</option>
-            <option value="UM">United States Minor Outlying Islands (Próximamente)</option>
-            <option value="UY">Uruguay (Próximamente)</option>
-            <option value="VE">Venezuela (Próximamente)</option>
+            <option value="CR">Costa Rica</option>
+            <option value="CU">Cuba</option>
+            <option value="DO">Dominican Republic</option>
+            <option value="GF">French Guiana</option>
+            <option value="GD">Grenada</option>
+            <option value="GT">Guatemala</option>
+            <option value="GY">Guyana</option>
+            <option value="HT">Haiti</option>
+            <option value="HN">Honduras</option>
+            <option value="JM">Jamaica</option>
+            <option value="MX">Mexico</option>
+            <option value="NI">Nicaragua</option>
+            <option value="PY">Paraguay</option>
+            <option value="PE">Peru</option>
+            <option value="US">United States</option>
+            <option value="UM">United States Minor Outlying Islands</option>
+            <option value="UY">Uruguay</option>
+            <option value="VE">Venezuela</option>
           </select>
         </div>
         <input name="responseUrl"    type="hidden"  value="http://explora.life/transaccion/index.php" >
@@ -207,6 +206,12 @@ include '../_contenido/navigation_producto.php';
         if (document.checkout.shippingCountry.value===''){
             err = 1;
             alert('Por favor llene su Pais de envío');
+            document.checkout.shippingCountry.focus();
+        }
+
+        if (document.checkout.shippingCountry.value!='CO'){
+            err = 1;
+            alert('Proximamente llegaremos a '+ document.checkout.shippingCountry.options[document.checkout.shippingCountry.selectedIndex].innerHTML +', por el momento solo envios a Colombia');
             document.checkout.shippingCountry.focus();
         }
 
