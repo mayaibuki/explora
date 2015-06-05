@@ -5,16 +5,16 @@ error_reporting(E_ALL);
 
 if($_SERVER['REQUEST_METHOD']==='POST'){
 	if(!isset($_POST['id'])){
-		$name = $_POST['name'];
-		$sku = $_POST['sku'];
-		$price = $_POST['price'];
-		$color = $_POST['color'];
-		$color_code = $_POST['color_code'];
-		$how = $_POST['how_to_use'];
-		$description = $_POST['description'];
-		$stock = $_POST['stock'];
-		$category_id = $_POST['category_id'];
-		$attributes_id = $_POST['attribute_id'];
+		$name = $link->real_escape_string($_POST['name']);
+		$sku = $link->real_escape_string($_POST['sku']);
+		$price = $link->real_escape_string($_POST['price']);
+		$color = $link->real_escape_string($_POST['color']);
+		$color_code = $link->real_escape_string($_POST['color_code']);
+		$how = $link->real_escape_string($_POST['how_to_use']);
+		$description = $link->real_escape_string($_POST['description']);
+		$stock = $link->real_escape_string($_POST['stock']);
+		$category_id = $link->real_escape_string($_POST['category_id']);
+		$attributes_id = $link->real_escape_string($_POST['attribute_id']);
 		if($color){
 			$slug = slugify($name).'-'.slugify($color);
 		} else{

@@ -13,8 +13,20 @@
 
 
             <div class="col-xs-6 col-sm-4 animated pulse">
-            	<a class="page-scroll" href="salud-con-juguetes"><div class="otros_imgbg" style="background-image: url('_img_articulos/lelogigi_sm.jpg');"><h5>¿Cómo mejorar tu salud con juguetes?</h5>
-       			</div></a>
+            	<a class="page-scroll" href="que-es-tuppersex">
+            		<div class="otros_imgbg" style="background-image: url('/_img_articulos/sexandcity2_md.jpg');">
+            			<h5>¿Qué es un TupperSex?</h5>
+					</div>
+       			</a>
+            </div>
+
+            <div class="col-xs-6 col-sm-4 animated pulse">
+            	<a class="page-scroll" href="/comprar/zany-pocket-toyfriend/">
+            		<div class="otros_imgbg" style="background-image: url('/media/product/zany-pocket-toyfriend/Tickler-Zany-PocketToyfriend-Side-Web.jpg');">
+            			<p class="descripcion">Vibrador de bolsillo</p>
+            			<h5>Zany Pocket Toyfriend</h5>
+					</div>
+       			</a>
             </div>
 
             <div class="col-xs-6 col-sm-4 animated pulse">
@@ -27,10 +39,7 @@
        			</div></a>
             </div>
 
-            <div class="col-xs-6 col-sm-4 animated pulse">
-            	<a class="page-scroll" href="squirt"><div class="otros_imgbg" style="background-image: url('_img_articulos/lavar_sm.jpg');"><h5>Eyaculación Femenina, ¿Qué es eso?</h5>
-       			</div></a>
-            </div>
+
 
 
         </div> 

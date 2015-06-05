@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 include_once 'admin-class.php';
 $admin = new itg_admin();
 $admin->_authenticate();
@@ -9,6 +11,7 @@ include_once '../functions.php';
 <head>
   <title>explora.life</title>
   <link rel="stylesheet" href="/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap-datetimepicker.min.css">
   <meta charset="utf-8">
   <!--favicon-->
   <link rel=icon href=/_img_icons/favicon16x16.png sizes="16x16" type="image/png">
@@ -47,6 +50,19 @@ include_once '../functions.php';
       background:#eee;
       margin:1em 0;
     }
+
+    .attributes{
+      display: table;
+    }
+    .attributes li{
+      display: table-row;
+      list-style: none;
+      cursor: move;
+    }
+    .attributes li div{
+      display: table-cell;
+      padding: .5em;
+    }
   </style>
 </head>
 <body>
@@ -79,7 +95,7 @@ include_once '../functions.php';
     </div><!-- /.container-fluid -->
   </nav>
   <div class="container">
-    <div class="col-md-5">
+    <div class="col-md-4">
       <div class="module">
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
           <div class="panel panel-default">
@@ -248,10 +264,58 @@ include_once '../functions.php';
             </div>
           </div>
         </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingFour">
+
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              Agregar Código Promocional
+            </a>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div class="panel-body">
+              <form method="post" action="promocode.php">
+                <div class="form-group">
+                  <input type="text" name="code" placeholder="Código" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Valid Since</label>
+                  <p class="muted">mm/dd/aa</p>
+                  <div class="input-group datepicker" id="valid_cal">
+                    <input type="text" name="valid_since" id="valid_since" class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Valid Thru</label>
+                  <p class="muted">mm/dd/aa</p>
+                  <div class="input-group datepicker" id="valid_cal2">
+                    <input type="text" name="valid_thru" id="valid_thru" class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Discount percent</label>
+                  <p class="muted">Decimal (.5)</p>
+                  <input type="text" name="discount_percentage" id="discount_percentage" class="form-control datepicker" />
+                </div>
+                <div class="form-group">
+                  <label>Discount price</label>
+                  <p class="muted">Número 10000</p>
+                  <input type="text" name="discount_price" id="discount_price" class="form-control datepicker" />
+                </div>
+                <button type="submit" class="btn btn-success">Guardar</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>     
-  <div class="col-md-7">
+  <div class="col-md-8">
     <div class="module">
       <div role="tabpanel">
 
@@ -261,6 +325,7 @@ include_once '../functions.php';
           <li role="presentation"><a href="#category" aria-controls="category" role="tab" data-toggle="tab">Categorias</a></li>
           <li role="presentation"><a href="#attributes" aria-controls="attributes" role="tab" data-toggle="tab">Atributos</a></li>
           <li role="presentation"><a href="#orders" aria-controls="orders" role="tab" data-toggle="tab">Ordenes</a></li>
+          <li role="presentation"><a href="#codes" aria-controls="codes" role="tab" data-toggle="tab">Códigos Promocionales</a></li>
         </ul>
 
         <!-- Tab panes -->
@@ -336,11 +401,9 @@ include_once '../functions.php';
             </table>
           </div>
           <div role="tabpanel" class="tab-pane" id="attributes">
-            <table class="table">
-              <thead>
-                <tbody>
+            <ul class="attributes">
                   <?php 
-                  $result = $mysqli->query('SELECT * FROM attributes');
+                  $result = $mysqli->query('SELECT * FROM attributes ORDER BY attr_order');
                   if (!$result) {
                     die('Could not query:' . mysqli_error());
                   }
@@ -348,23 +411,22 @@ include_once '../functions.php';
                   while($row = $result->fetch_assoc()) {
 
                     ?>
-                    <tr>
-                      <td><img src="<?php echo $row['icon'] ?>"></td>
-                      <td><?php echo $row['name']; ?></td>
-                      <td><?php echo $row['description']; ?></td>
-                      <td><a class="btn-info btn-sm" href="/admin/editar/atributo/<?php echo $row['attribute_id']; ?>">Editar</a></td>
-                      <td><a class="btn-error btn-sm" href="attribute.php?id=<?php echo $row['attribute_id'] ?>&amp;delete=1">Borrar</a></td>
-                    </tr>
+                    <li id="recordsArray_<?php echo $row['attribute_id']; ?>">
+                      <div><img src="<?php echo $row['icon'] ?>"></div>
+                      <div><?php echo $row['name']; ?></div>
+                      <div><?php echo $row['description']; ?></div>
+                      <div><a class="btn-info btn-sm" href="/admin/editar/atributo/<?php echo $row['attribute_id']; ?>">Editar</a></div>
+                      <div><a class="btn-error btn-sm" href="attribute.php?id=<?php echo $row['attribute_id'] ?>&amp;delete=1">Borrar</a></div>
+                    </li>
                     <?php
                   }
                   $result->close();
                   ?>
-                </tbody>
-              </table>
+              </ul>
             </div>
             <div role="tabpanel" class="tab-pane" id="orders">
               <?php 
-              $result = $mysqli->query('SELECT * FROM orders WHERE payed=true');
+              $result = $mysqli->query('SELECT * FROM orders WHERE (payed=true OR pending=true) AND hidden=false');
               if (!$result) {
                 die('Could not query:' . mysqli_error());
               }
@@ -376,8 +438,12 @@ include_once '../functions.php';
                   <table class="table">
                     <thead>
                       <tr>
-                        <td><strong>Orden NO.</strong> <?php echo $row['order_id']; ?></td>
-                        <td style="text-align: right;"><strong>Cliente:</strong> <?php echo $row['name'] ?></td>
+                        <td><strong>Orden NO.</strong> <?php echo $row['order_id']; if($row['pending']==TRUE && $row['payed']==False){ echo ' - Transacción pendiente'; } ?></td>
+                        <td style="text-align: right;"><strong>Cliente:</strong> <?php if ($row['name']!=''){ echo $row['name'].'/'; } ?><?php echo $row['email'] ?></td>
+                      </tr>
+                      <tr>
+                        <td><strong>Valor:</strong> $<?php echo number_format($row['amount']); ?></td>
+                        <td style="text-align: left;"></td>
                       </tr>
                       <tr>
                         <td><strong>Referencia:</strong> <?php echo $row['reference'] ?></td>
@@ -410,11 +476,57 @@ include_once '../functions.php';
                      ?>
                    </tbody>
                  </table>
+                 <button class="btn btn-error btn-block hide-btn" data-id="<?php echo $row['order_id']; ?>">Esconder</button>
                </div>
                <?php
              }
              $result->close();
              ?>
+           </div>
+           <div role="tabpanel" class="tab-pane" id="codes">
+              <?php 
+              $result = $mysqli->query('SELECT * FROM codes');
+              if (!$result) {
+                die('Could not query:' . mysqli_error());
+              }
+                ?>
+                   <table class="table">
+                    <thead>
+                    <tr>
+                      <th>Código</th>
+                      <th>Valido desde</th>
+                      <th>Valido hasta</th>
+                      <th>% de descuento</th>
+                      <th>Precio de descuento</th>
+                      <th>Veces usado</th>
+                      <th>Total Vendido</th>
+                    </tr>
+    
+                    </thead>
+                    <tbody>
+                      <?php
+                      while ($item = $result->fetch_assoc() )  {
+                       ?>
+                       <tr>
+                         <td><?php echo $item['code']; ?></td>
+                         <td><?php echo $item['valid_since']; ?></td>
+                         <td><?php echo $item['valid_thru']; ?></td>
+                         <td><?php echo $item['discount_percentage']; ?></td>
+                         <td><?php echo $item['discount_price']; ?></td>
+                         <td><?php echo $item['times_used']; ?></td>
+                         <td><?php echo $item['total_sold']; ?></td>
+                         
+                         <td><a class="btn-info btn-sm" href="/admin/editar/codigo/<?php echo $item['code_id']; ?>">Editar</a></td>
+                         <td><a class="btn-error btn-sm" href="/admin/promocode.php?id=<?php echo $item['code_id'] ?>&amp;delete=1">Borrar</a></td>
+                       </tr>
+                       <?php
+                     }
+                     $result->close();
+                     
+             ?>
+                   </tbody>
+                 </table>
+          
            </div>
          </div>
 
@@ -425,13 +537,21 @@ include_once '../functions.php';
  </div>
  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
  <script src="../js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="../js/moment.js"></script>
+    <script type="text/javascript" src="/admin/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap-datetimepicker.min.js"></script>
  <script type="text/javascript">
+ $(function () {
+                $('#valid_cal').datetimepicker();
+                $('#valid_cal2').datetimepicker();
+            });
   $(document).ready(function() {
     var max_fields      = 10; //maximum input boxes allowed
     var wrapper         = $(".img-form-group"); //Fields wrapper
     var add_button      = $(".add-form-group"); //Add button ID
     var wrapper2         = $(".img-form-group-how"); //Fields wrapper
     var add_button2      = $(".add-form-group-how"); //Add button ID
+
     
     var x = 1; //initlal text box count
     $(add_button).click(function(e){ //on add input button click
@@ -458,7 +578,24 @@ include_once '../functions.php';
   
     $(wrapper2).on("click",".remove_field", function(e){ //user click on remove text
         e.preventDefault(); $(this).next('div').remove(); x--;
+    });
+
+    $(function() {
+    $("ul.attributes").sortable({ opacity: 0.6, cursor: 'move', update: function() {
+          var order = $(this).sortable("serialize") + '&action=updateAttr'; 
+          $.post("/admin/updateDB.php", order, function(theResponse){
+            $("#contentRight").html(theResponse);
+          });                                
+        }                 
+      });
+    $('.hide-btn').on('click', function(e){
+      e.preventDefault();
+      var order_id = $(this).data('id');
+      $.post('orders.php', {id:order_id}, function(data){
+        $('#orders').load('order_query.php');
+      });
     })
+  });
 });
 </script>
 </body>

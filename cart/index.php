@@ -5,8 +5,59 @@ include_once '../_contenido/_header.php';
 
 echo '<body><br><br>';
 $currency = '$';
+$discount = 0;
+$discount_percentage = 0;
 $current_url = base64_encode("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
 include '../_contenido/navigation_producto.php';
+
+if($_SERVER['REQUEST_METHOD']==='POST'){
+  $code = $_POST['code'];
+  echo '<!--Post '.$code.'-->';
+  $promo = $mysqli->query("SELECT * FROM codes WHERE code='$code' LIMIT 1") or die("Error in the consult.." . mysqli_error($mysqli));
+  $promocode = $promo->fetch_object();
+  $flash = '';
+  $norm_since = new DateTime($promocode->valid_since);
+  $norm_thru = new DateTime($promocode->valid_thru);
+  $now = new DateTime('NOW');
+  $valid = False;
+
+  if($norm_since > $now){
+    echo '<!--failed since-->';
+    $flash .= 'Código invalido ';
+    $valid = False;
+  }
+
+
+  if ($now > $norm_since){
+    echo '<!--passed tests-->';
+    $valid = true;
+  } else{
+    echo '<!--failed tests-->';
+  }
+
+  if($valid){
+    echo '<!--tiempo '.$now->getTimestamp().'/'.$norm_since->getTimestamp().'/'.$norm_thru->getTimestamp().'-->';
+    $_SESSION['discount_id'] = $promocode->code_id;
+    if($promocode->discount_price > 0){
+      $_SESSION['discount'] = $promocode->discount_price;
+    } else{
+      $_SESSION['discount_percentage'] = $promocode->discount_percentage;
+
+    }
+        $flash = 'Código aplicado';
+  }
+}
+
+if(isset($_SESSION['discount'])){
+  $discount = $_SESSION['discount'];
+  echo $_SESSION['discount'];
+}
+
+if(isset($_SESSION['discount_percentage'])){
+  $discount_percentage = $_SESSION['discount_percentage'];
+  echo '<!--Descuento-'.$_SESSION['discount_percentage'].'-->';
+}
+
 ?>
 
 <section>
@@ -18,8 +69,10 @@ include '../_contenido/navigation_producto.php';
 	      <?php
 	      if(isset($_SESSION["products"]))
 	      {
+          if(isset($flash) && $flash != ''){
+            echo '<p class="bg-info" style="padding:.5em;">'.$flash.'</p>';
+          }
 	        $total = 0;
-	        echo '<form method="post" action="PAYMENT-GATEWAY">';
 	        echo '<table class="table">';
 	        echo '<thead><tr><th></th><th>Producto</th><th>Precio</th><th>Cantidad</th><th>Precio Total</th><th></th></thead>';
 	        $cart_items = 0;
@@ -42,36 +95,48 @@ include '../_contenido/navigation_producto.php';
 	         echo '<td>'.$currency.number_format($subtotal).'</td>';
 	         echo '<td><a href="/cart_update.php?removep='.$cart_itm["code"].'&return_url='.$current_url.'" class="btn btn-sm btn-error">quitar</a></td>';
 	         $total = ($total + $subtotal);
-	         if ($total>85000) {
-	          $grandTotal = $total;
-	          $shipping = 0;
-	        } else{
-	          $grandTotal = $total + 5500;
-	          $shipping = 5500;
-	        }
-	
-	        echo '<input type="hidden" name="item_name['.$cart_items.']" value="'.$obj->name.'" />';
-	        echo '<input type="hidden" name="item_code['.$cart_items.']" value="'.$product_code.'" />';
-	        echo '<input type="hidden" name="item_desc['.$cart_items.']" value="'.$obj->description.'" />';
-	        echo '<input type="hidden" name="item_qty['.$cart_items.']" value="'.$cart_itm["qty"].'" />';
-	        $cart_items ++;
+           $grandTotal = $total;
+	         
 	        echo '</tr>';
+            $cart_items ++;
 	
 	      }
+
 	      echo '<tfoot>';
 	      echo '<tr><td colspan="5">Subtotal</td>';
 	      echo '<td>'.$currency.number_format($total).'</td></tr>';
+        if($discount!=0){
+          $grandTotal = $grandTotal-$discount;
+          echo '<tr><td colspan="5">Descuento</td>';
+          echo '<td>'.$currency.number_format($discount).'</td></tr>';
+        } elseif ($discount_percentage!=0) {
+          $grandTotal = $grandTotal-($grandTotal*$discount_percentage);
+          echo '<tr><td colspan="5">Descuento</td>';
+          echo '<td>'.($discount_percentage*100).'%</td></tr>';
+        }
+        if ($total>85000) {
+            $shipping = 0;
+          } else{
+            $grandTotal = $grandTotal + 5500;
+            $shipping = 5500;
+          }
 	      echo '<tr><td colspan="5">Costos de envio</td>';
 	      echo '<td>'.$currency.number_format($shipping).'</td></tr>';
 	      echo '<tr><td colspan="5">Total</td>';
 	      echo '<td>'.$currency.number_format($grandTotal).'</td></tr>';
 	      echo '</tfoot>';
 	      echo '</table>';
+          // Discount codes
+          echo '<form class="form form-inline" method="post" action="">';
+          echo '<div class="form-group">';
+          echo '<input type="text" name="code" class="form-control" placeholder="Código Promocional">';
+          echo '</div>';
+          echo '<button class="btn btn-primary" type="submit">Validar código</button>';
+          echo '</form><br><br>';
 	      echo '<span class="check-out-txt">';
 	      echo '</span>';
 	      echo '<a href="/comprar" class="btn btn-lg btn-primary" style="margin-right:1em;">Seguir Comprando</a>';
 	      echo '<span class="empty-cart"><a href="/cart_update.php?emptycart=1&return_url='.$current_url.'">Vaciar Carrito de compras</a></span>';
-	      echo '</form>';
 	
 	    }else{
 	      echo '<p>Tu carrito de compras esta vacío, pero puedes comprar <a href="../comprar/">productos acá</a></p>';
@@ -105,6 +170,7 @@ include '../_contenido/navigation_producto.php';
         <input name="tax"           type="hidden"  value="0"  >
         <input name="taxReturnBase" type="hidden"  value="0" >
         <input name="extra1" type="hidden" value="<?php echo $referenceCode; ?>">
+        <input name="extra2" type="hidden" value="<?php echo $_SESSION['discount_id']; ?>">
         <input name="currency"      type="hidden"  value="<?php echo $currency_code; ?>" >
         <input name="signature"     type="hidden"  value="<?php echo $signature; ?>"  >
         <div class="form-group">

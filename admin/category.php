@@ -4,8 +4,8 @@ include_once 'db_con.php';
 
 if($_SERVER['REQUEST_METHOD']==='POST'){
 	if(!$_POST['id']){
-		$name = $_POST['name'];
-		$description = $_POST['description'];
+		$name = $link->real_escape_string($_POST['name']);
+		$description = $link->real_escape_string($_POST['description']);
 		$slug = slugify($name);
 		upload_file('../media/category/', 'img');
 		$img = '/media/category/'.basename($_FILES['img']["name"]);

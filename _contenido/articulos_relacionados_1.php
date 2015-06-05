@@ -20,7 +20,7 @@
 
 
             <div class="col-xs-6 col-md-4 animated pulse">
-            	<a class="page-scroll" href="../salud-con-juguetes"><div class="otros_imgbg" style="background-image: url('../_img_articulos/lelogigi_sm.jpg');"><h5>¿Cómo mejorar tu salud con juguetes?</h5>
+            	<a class="page-scroll" href="../que-es-tuppersex"><div class="otros_imgbg" style="background-image: url('../_img_articulos/sexandcity2_md.jpg');"><h5>¿Qué es un TupperSex?</h5>
        			</div></a>
             </div>
 

@@ -14,4 +14,15 @@ if ($action == "updateRecordsListings"){
 		$listingCounter = $listingCounter + 1;	
 	}
 }
+
+if ($action == "updateAttr"){
+	
+	$listingCounter = 1;
+	foreach ($updateRecordsArray as $recordIDValue) {
+		
+		$query = "UPDATE attributes SET attr_order = " . $listingCounter . " WHERE attribute_id = " . $recordIDValue;
+		$mysqli->query($query) or die("Error in the consult.." . mysqli_error($mysqli));
+		$listingCounter = $listingCounter + 1;	
+	}
+}
 ?>

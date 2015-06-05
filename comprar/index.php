@@ -157,7 +157,7 @@ session_start();
 			                            if($count==0){
 			                                echo '<div class="otros_imgbg" style="background-image: url(/media/timthumb.php?src='. $img['full_img'] .'&w=200)">  </div>
 			                                <h5 class="text-center text-muted product-name">'.$p_row['name'].'</h5>
-			                                <p class="text-center">$'.$p_row['price'].'</p>'; 
+			                                <p class="text-center">$'.number_format($p_row['price']).'</p>'; 
 			                            }
 			                            $count++;
 			                        }

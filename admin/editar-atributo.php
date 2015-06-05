@@ -9,8 +9,8 @@ $result = $mysqli->query("SELECT * FROM attributes WHERE attribute_id='$id'");
 
 while($row = $result->fetch_assoc()) {
   if($_SERVER['REQUEST_METHOD']=='POST'){
-    $name = $_POST['name'];
-    $description = $_POST['description'];
+    $name = $mysqli->real_escape_string($_POST['name']);
+    $description = $mysqli->real_escape_string($_POST['description']);
 
     if(isset($_FILES["icon"])){    
       if($_FILES["icon"]['name']!=''){

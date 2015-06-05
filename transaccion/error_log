@@ -23,3 +23,34 @@
 [23-May-2015 11:00:25 America/Detroit] PHP Fatal error:  Call to a member function fetch_object() on a non-object in /home/mayaibuk/public_html/explora/transaccion/transaction_complete.php on line 18
 [23-May-2015 11:00:28 America/Detroit] PHP Fatal error:  Call to a member function fetch_object() on a non-object in /home/mayaibuk/public_html/explora/transaccion/transaction_complete.php on line 18
 [23-May-2015 14:28:41 America/Detroit] PHP Fatal error:  Call to a member function fetch_object() on a non-object in /home/mayaibuk/public_html/explora/transaccion/transaction_complete.php on line 18
+[01-Jun-2015 17:46:27 America/Detroit] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/mayaibuk/public_html/explora/transaccion/index.php on line 61
+[01-Jun-2015 18:46:41 America/Detroit] PHP Fatal error:  Call to a member function fetch_object() on a non-object in /home/mayaibuk/public_html/explora/transaccion/index.php on line 50
+[01-Jun-2015 18:48:08 America/Detroit] PHP Notice:  Undefined index: mensaje in /home/mayaibuk/public_html/explora/transaccion/index.php on line 49
+[01-Jun-2015 18:48:08 America/Detroit] PHP Fatal error:  Call to a member function fetch_object() on a non-object in /home/mayaibuk/public_html/explora/transaccion/index.php on line 54
+[01-Jun-2015 18:48:59 America/Detroit] PHP Notice:  Undefined index: mensaje in /home/mayaibuk/public_html/explora/transaccion/index.php on line 49
+[01-Jun-2015 18:48:59 America/Detroit] PHP Notice:  Undefined variable: reference in /home/mayaibuk/public_html/explora/transaccion/index.php on line 53
+[01-Jun-2015 18:48:59 America/Detroit] PHP Notice:  Trying to get property of non-object in /home/mayaibuk/public_html/explora/transaccion/index.php on line 55
+[01-Jun-2015 18:48:59 America/Detroit] PHP Notice:  Trying to get property of non-object in /home/mayaibuk/public_html/explora/transaccion/index.php on line 56
+[01-Jun-2015 18:48:59 America/Detroit] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mayaibuk/public_html/explora/_contenido/_header.php:49) in /home/mayaibuk/public_html/explora/transaccion/index.php on line 68
+[01-Jun-2015 18:48:59 America/Detroit] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mayaibuk/public_html/explora/_contenido/_header.php:49) in /home/mayaibuk/public_html/explora/transaccion/index.php on line 69
+[01-Jun-2015 18:48:59 America/Detroit] PHP Warning:  session_regenerate_id(): Cannot regenerate session id - headers already sent in /home/mayaibuk/public_html/explora/transaccion/index.php on line 70
+[01-Jun-2015 18:48:59 America/Detroit] PHP Notice:  Undefined variable: banco_pse in /home/mayaibuk/public_html/explora/transaccion/index.php on line 96
+[01-Jun-2015 18:49:55 America/Detroit] PHP Notice:  Undefined index: count in /home/mayaibuk/public_html/explora/_contenido/navigation_comprar.php on line 38
+[01-Jun-2015 18:49:55 America/Detroit] PHP Notice:  Undefined variable: reference in /home/mayaibuk/public_html/explora/transaccion/index.php on line 53
+[01-Jun-2015 18:49:55 America/Detroit] PHP Notice:  Trying to get property of non-object in /home/mayaibuk/public_html/explora/transaccion/index.php on line 55
+[01-Jun-2015 18:49:55 America/Detroit] PHP Notice:  Trying to get property of non-object in /home/mayaibuk/public_html/explora/transaccion/index.php on line 56
+[01-Jun-2015 18:49:55 America/Detroit] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mayaibuk/public_html/explora/_contenido/_header.php:49) in /home/mayaibuk/public_html/explora/transaccion/index.php on line 68
+[01-Jun-2015 18:49:55 America/Detroit] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mayaibuk/public_html/explora/_contenido/_header.php:49) in /home/mayaibuk/public_html/explora/transaccion/index.php on line 69
+[01-Jun-2015 18:49:55 America/Detroit] PHP Warning:  session_regenerate_id(): Cannot regenerate session id - headers already sent in /home/mayaibuk/public_html/explora/transaccion/index.php on line 70
+[01-Jun-2015 18:49:55 America/Detroit] PHP Notice:  Undefined variable: banco_pse in /home/mayaibuk/public_html/explora/transaccion/index.php on line 96
+[01-Jun-2015 18:52:34 America/Detroit] PHP Notice:  Undefined index: count in /home/mayaibuk/public_html/explora/_contenido/navigation_comprar.php on line 38
+[01-Jun-2015 18:52:34 America/Detroit] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/mayaibuk/public_html/explora/_contenido/_header.php:49) in /home/mayaibuk/public_html/explora/transaccion/index.php on line 68
+[01-Jun-2015 18:52:34 America/Detroit] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mayaibuk/public_html/explora/_contenido/_header.php:49) in /home/mayaibuk/public_html/explora/transaccion/index.php on line 69
+[01-Jun-2015 18:52:34 America/Detroit] PHP Warning:  session_regenerate_id(): Cannot regenerate session id - headers already sent in /home/mayaibuk/public_html/explora/transaccion/index.php on line 70
+[01-Jun-2015 18:52:34 America/Detroit] PHP Notice:  Undefined variable: banco_pse in /home/mayaibuk/public_html/explora/transaccion/index.php on line 96
+[01-Jun-2015 18:53:20 America/Detroit] PHP Notice:  Undefined index: count in /home/mayaibuk/public_html/explora/_contenido/navigation_comprar.php on line 38
+[01-Jun-2015 18:53:20 America/Detroit] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mayaibuk/public_html/explora/_contenido/_header.php:49) in /home/mayaibuk/public_html/explora/transaccion/index.php on line 69
+[01-Jun-2015 18:53:20 America/Detroit] PHP Warning:  session_regenerate_id(): Cannot regenerate session id - headers already sent in /home/mayaibuk/public_html/explora/transaccion/index.php on line 70
+[01-Jun-2015 18:53:20 America/Detroit] PHP Notice:  Undefined variable: banco_pse in /home/mayaibuk/public_html/explora/transaccion/index.php on line 96
+[01-Jun-2015 18:54:18 America/Detroit] PHP Notice:  Undefined index: count in /home/mayaibuk/public_html/explora/_contenido/navigation_comprar.php on line 38
+[01-Jun-2015 18:54:18 America/Detroit] PHP Notice:  Undefined variable: banco_pse in /home/mayaibuk/public_html/explora/transaccion/index.php on line 93

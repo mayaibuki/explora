@@ -396,8 +396,7 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default.navbar-shrink {
         padding: 10px 0;
         background-color: rgba(255,255,255,0.97);
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24);
-        box-shadow: 0 0 4px rgba(0, 0, 0, 0.54);
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.24);    
     }
 
     .navbar-default .navbar-shrink .navbar-brand {
@@ -1083,6 +1082,8 @@ ul.social-buttons li a:active {
     transform: rotate(45deg);
 }
 
+
+
 .portfolio-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
@@ -1095,12 +1096,14 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #50CAE3;
+    background: #F85863;
+    color: #ffffff;
 }
 
 ::selection {
     text-shadow: none;
-    background: #50CAE3;
+    background: #F85863;
+    color: #ffffff;
 }
 
 img::selection {
@@ -1132,10 +1135,9 @@ body {
     background: #FFFFFF no-repeat center center ;
     background-size: auto 100%;
     margin: 15px 0;
-    text-shadow: 0 0 6px rgba(0, 0, 0, 0.54);
+    text-shadow: 0 0 24px rgba(0, 0, 0, 0.54);
     text-align: center;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.24);
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.24);
 }
 
 .carousel_img {
@@ -1288,8 +1290,6 @@ section#otros h5 {
 
 
 .thumbnail-link {
-    margin: 0 0 10px;
-    border-bottom: 1px #4a4a4a solid;
     margin: 0 0 30px;
 }
 

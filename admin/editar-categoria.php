@@ -9,9 +9,9 @@ $result = $mysqli->query("SELECT * FROM category WHERE category_id='$slug'");
 
 while($row = $result->fetch_assoc()) {
   if($_SERVER['REQUEST_METHOD']=='POST'){
-    $id = $row['category_id'];
-    $name = $_POST['name'];
-    $description = $_POST['description'];
+    $id = $mysqli->real_escape_string($row['category_id']);
+    $name = $mysqli->real_escape_string($_POST['name']);
+    $description = $mysqli->real_escape_string($_POST['description']);
     $slug = slugify($name);
 
     if(isset($_FILES["img"])){    

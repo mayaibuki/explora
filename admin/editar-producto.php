@@ -5,6 +5,7 @@ include_once 'admin-class.php';
 $admin = new itg_admin();
 $admin->_authenticate();
 include_once '../functions.php';
+$current_url = base64_encode("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
 
 $slug = $_GET['slug'];
 $result = $mysqli->query("SELECT * FROM product WHERE slug='$slug'");
@@ -13,15 +14,15 @@ while($row = $result->fetch_assoc()) {
   $product_id = intval($row['product_id']);
 
   if($_SERVER['REQUEST_METHOD']=='POST'){
-    $name = $_POST['name'];
-    $sku = $_POST['sku'];
-    $price = $_POST['price'];
-    $color = $_POST['color'];
-    $color_code = $_POST['color_code'];
-    $how = $_POST['how_to_use'];
-    $description = $_POST['description'];
-    $stock = $_POST['stock'];
-    $category_id = $_POST['category_id'];
+    $name = $mysqli->real_escape_string($_POST['name']);
+    $sku = $mysqli->real_escape_string($_POST['sku']);
+    $price = $mysqli->real_escape_string($_POST['price']);
+    $color = $mysqli->real_escape_string($_POST['color']);
+    $color_code = $mysqli->real_escape_string($_POST['color_code']);
+    $how = $mysqli->real_escape_string($_POST['how_to_use']);
+    $description = $mysqli->real_escape_string($_POST['description']);
+    $stock = $mysqli->real_escape_string($_POST['stock']);
+    $category_id = $mysqli->real_escape_string($_POST['category_id']);
     //$attributes_id = $_POST['attribute_id'];
     if($color){
       $slug = slugify($name).'-'.slugify($color);
@@ -187,7 +188,7 @@ while($row = $result->fetch_assoc()) {
 
                 while($img= $how_imgs->fetch_object()){
 
-                  echo '<img src="/media/timthumb.php?src='.$img->full_img.'"> ';
+                  echo '<div style="inline-block"><img src="/media/timthumb.php?src='.$img->full_img.'"><a href="/admin/remove_pic.php?id='.$img->img_id.'&amp;type=how_product_img&amp;return_url='.$current_url.'" class="btn btn-error btn-block">Quitar</a></div>';
 
 
                 }
@@ -229,7 +230,7 @@ where p.product_id = '$product_id'");
 
                   echo '<table class="table">';
                   while($attr = $attrs->fetch_assoc()){
-                    echo '<tr><td><p class="description"><img src="'.$attr['icon'].'"> '.$attr['description'].'</p></td><td><a class="btn-sm btn-error" href="remove-attribute.php?id='.$attr['attribute_id'].'">Quitar atributo</a></td></tr>';
+                    echo '<tr><td><p class="description"><img src="'.$attr['icon'].'"> '.$attr['description'].'</p></td><td><a class="btn-sm btn-error" href="/admin/remove_attribute.php?id='.$attr['attribute_id'].'&amp;pid='.$row['product_id'].'&amp;return_url='.$current_url.'">Quitar atributo</a></td></tr>';
                   }
                   echo '</table>';
 
@@ -258,7 +259,7 @@ where p.product_id = '$product_id'");
                     ?>
                     <tr>
                       <td><?php echo ucwords(strtolower($related['name'])); ?></td>
-                      <td><?php echo '<a class="btn-sm btn-error" href="remove-related.php?id='.$related['product_id'].'">Quitar relación</a>' ?></td>
+                      <td><?php echo '<a class="btn-sm btn-error" href="/admin/remove_relation.php?id='.$related['product_id'].'&amp;rid='.$row['product_id'].'&amp;return_url='.$current_url.'">Quitar relación</a>' ?></td>
                     </tr>
                     <?php 
                   }
@@ -287,7 +288,7 @@ where p.product_id = '$product_id'");
                       while($img= $imgs->fetch_assoc()){
 
                         ?>
-                        <li id="recordsArray_<?php echo $img['img_id']; ?>"><?php  echo '<img src="/media/timthumb.php?src='.$img['full_img'].'">'; ?></li>
+                        <li id="recordsArray_<?php echo $img['img_id']; ?>"><?php  echo '<img src="/media/timthumb.php?src='.$img['full_img'].'">'; ?><a href="/admin/remove_pic.php?id=<?php echo $img['img_id']; ?>&amp;type=product_img&amp;return_url=<?php echo $current_url; ?>" class="btn btn-error btn-block">Quitar</a></li>
                         <?php } ?>
                       </ul>
                       <br>

@@ -1,5 +1,12 @@
 <?php
+//error_reporting(E_ALL);
+//ini_set('display_errors', 1);
 session_start();
+setcookie("PHPSESSID", "", 1);
+session_unset();  
+session_destroy(); 
+session_start();
+session_regenerate_id(true);
 @include_once '../functions.php';
 include '../_contenido/_header.php';
 echo '<body><br><br>';
@@ -28,6 +35,7 @@ include '../_contenido/navigation_comprar.php';
       $pseBank = $_REQUEST['pseBank'];
       $lapPaymentMethod = $_REQUEST['lapPaymentMethod'];
       $transactionId = $_REQUEST['transactionId'];
+      $email = $_REQUEST['buyerEmail'];
 
       if ($_REQUEST['polTransactionState'] == 6 && $_REQUEST['polResponseCode'] == 5) {
         $estadoTx = "Transacción fallida";
@@ -40,10 +48,9 @@ include '../_contenido/navigation_comprar.php';
       }
       else if ($_REQUEST['polTransactionState'] == 4 && $_REQUEST['polResponseCode'] == 1) {
         $estadoTx = "Transacción aprobada";
-        session_destroy();
       }
       else {
-        $estadoTx=$_REQUEST['mensaje'];
+        $estadoTx=$_REQUEST['lapTransactionState'];
       }
 
       if ($transactionState == 4 || $transactionState == 7){
@@ -56,9 +63,8 @@ include '../_contenido/navigation_comprar.php';
             $p_id = $itm['product_id'];
             $mysqli->query("UPDATE product SET stock=stock-'$qty' WHERE product_id='$p_id'");
           }
-          $mysqli->query("UPDATE orders SET stock_discount=TRUE WHERE reference='$referenceCode'");
+          $mysqli->query("UPDATE orders SET amount='$TX_VALUE', email='$email', stock_discount=TRUE, pending=TRUE WHERE reference='$referenceCode'");
         }
-        session_destroy();
       }
 
 
@@ -117,7 +123,7 @@ include '../_contenido/navigation_comprar.php';
               <tfoot>
                 <tr>
                   <td colspan="2">
-                    Transacciones realizadas con tarjeta de crédito pueden tomar hasta 4 horas en ser validadas dependiendo de la entidad bancaria
+                    Transacciones realizadas con tarjeta de credito pueden tomar hasta 4 horas en ser validadas dependiendo de la entidad bancaria
                   </td>
                 </tr>
                 <tr>

@@ -45,6 +45,10 @@ while($row = $result->fetch_assoc()) {
   .zoomingBox-xl{
     max-width: 100%;
   }
+  .description-cat{
+    columns: 1;
+    -webkit-columns: 1;
+  }
   </style>
 </head>
 
@@ -70,7 +74,7 @@ while($row = $result->fetch_assoc()) {
   <!--vibradores -->
   <section id="vibradores" class="bg-light-gray" >
     <div class="container">     
-      <div class="row ">
+      <div class="row description-cat">
         <div class="imagen col-sm-4">
           <?php 
           $imgs = $mysqli->query("SELECT * FROM product_img WHERE product_id='$product_id'");
@@ -175,7 +179,7 @@ while($row = $result->fetch_assoc()) {
                     join product_attributes pa on p.product_id = pa.product_id
                     join attributes a on a.attribute_id = pa.attribute_id
 -- optional where clause
-where p.product_id = '$product_id'");
+where p.product_id = '$product_id' order by a.attr_order");
 
                   while($attr = $attrs->fetch_assoc()){
                     echo '<p class="description"><img src="'.$attr['icon'].'"> '.$attr['description'].'</p>';
@@ -287,7 +291,7 @@ where p.product_id = '$product_id'");
               <img src="<?php echo $root; ?>_img_website/pse.png" height="42px" alt="Pagos seguro en línea"/> <img src="<?php echo $root; ?>_img_website/payulatam.png" height="42px" alt="PayU latam"/>              
               <p class="descripcion">o transferencia bancaria.</p>
               <p class="descripcion">Todos los métodos de pago son <b>seguros</b>. Te enviaremos un e-mail con la confirmación cuando recibamos tu pago, otro cuando te enviemos la mercancía (paquete discreto) y uno final para asegurarnos de que hayas recibido el producto con satisfacción</p>
-              <p class="descripcion">Si tienes alguna pregunta, envía un e-mail a <a href="mailto:pedidos@explora.life">pedidos@explora.life</a> o por WhatsApp al <a href="tel:+57-316-874-9597">+57 (316) 874 9597</a></p> 
+              <p class="descripcion">Si tienes alguna pregunta, envía un e-mail a <a href="mailto:pedidos@explora.life">pedidos@explora.life</a> o por WhatsApp al <a href="tel:+57-311-584-1563">+57 (311) 584-1563</a></p> 
 
             </div>
             <div class="col-md-6">
@@ -329,6 +333,30 @@ where p.product_id = '$product_id'");
       }
       ?>
       </script>
+      
+      
+      
+
+<!-- Facebook Conversion Code for Key Page Views - Productos -->
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', '6030178124731', {'value':'0.00','currency':'USD'}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6030178124731&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
+
+<!--  -->      
+      
+      
     </body>
     <?php
   }

@@ -3,7 +3,7 @@ session_start(); //start session
 include_once("functions.php"); //include config file
 
 $reference = 'explora.life-'.session_id();
-$query = "SELECT * FROM orders WHERE reference='$reference' LIMIT 1";
+$query = "SELECT * FROM orders WHERE reference='$reference' AND payed=false AND pending=False LIMIT 1";
 $query_new = "INSERT INTO orders SET reference='$reference'";
 $c_result = $mysqli->query($query);
 if($c_result){
@@ -19,7 +19,12 @@ if($c_result){
 if(isset($_GET["emptycart"]) && $_GET["emptycart"]==1)
 {
     $return_url = base64_decode($_GET["return_url"]); //return url
-    session_destroy();
+    session_unset();   // Remove the $_SESSION variable information.
+    session_destroy(); // Remove the server-side session information.
+    setcookie("PHPSESSID", "", 1); // Force the cookie to expire.
+    session_start();
+    session_regenerate_id(true);
+
     $mysqli->query("DELETE FROM order_item WHERE order_id='$cart_id'");
     header('Location:/cart/');
 }

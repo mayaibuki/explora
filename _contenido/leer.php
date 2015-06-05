@@ -46,6 +46,7 @@
 	            <p class="text-white">Artículos sobre juguetes sexuales, sexo, relaciones de pareja, placer, independencia y autoestima
 	            </p>
 	        </div>
+	        	<?php include("../juguetes-toxicos/thumb.php"); ?>
 	        	<?php include("../condon/thumb.php"); ?>
 	        	<?php include("../histeria/thumb.php"); ?>
 	        	<?php include("../salud-con-juguetes/thumb.php"); ?>	    
