@@ -1,5 +1,5 @@
 <a href="../6-fantasias-femeninas" class="text-primary">
-	<div class="articulo thumbnail-link animated pulse col-xs-6 col-sm-4 col-md-3">
+	<div class="articulo thumbnail-link animated pulse col-xs-6 col-sm-6 col-md-4">
         <img src="../_img_articulos/fantasias_sm.jpg" alt="fantasias femeninas">
             <div class="thumbnail-parrafo">
                 <h4 class="service-heading">Las 6 fantasías de las mujeres</h4>

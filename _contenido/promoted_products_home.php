@@ -2,7 +2,7 @@
         <div class="row">        
 
             <div class="col-xs-6 col-sm-4 animated pulse">
-            	<a class="page-scroll" href="sexo-consensual"><div class="otros_imgbg" style="background-image: url('_img_articulos/consenso_sm.jpg');"><h5>¿Qué es el sexo con consentimiento?</h5>
+            	<a class="page-scroll" href="condon"><div class="otros_imgbg" style="background-image: url('_img_articulos/condon_sm.jpg');"><h5>¿Cómo usar un condón?</h5>
        			</div></a>
             </div>
                         
@@ -35,7 +35,7 @@
             </div>            
             
             <div class="col-xs-6 col-sm-4 animated pulse">
-            	<a href="6-fantasias-femeninas"><div class="otros_imgbg" style="background-image: url('_img_articulos/fantasias_sm.jpg'); height:100%;"><h5>Las 6 fantasías de las mujeres</h5>
+            	<a href="confesiones-la-regalada-de-las-fiestas"><div class="otros_imgbg" style="background-image: url('_img_articulos/ramona01_sm.jpg'); height:100%;"><h5>Cómo evitar ser la regalada de las fiestas</h5>
        			</div></a>
             </div>
 

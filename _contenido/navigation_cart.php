@@ -20,9 +20,6 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                                       <li>
-                        <a class="page-scroll" href="#contact">Suscríbete</a>
-                    </li>
                     <li>
                         <a class="page-scroll btn btn-cart" href="/cart"> <i class="fa fa-shopping-cart"> <?php if($_SESSION["count"]>0){ echo $_SESSION["count"]; } ?></i>
 						</a>

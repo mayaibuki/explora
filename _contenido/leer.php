@@ -13,12 +13,15 @@
 	<!-- posicion thumbnails-->
 	
 	    <div class="row">
-			<div class="categoria col-xs-6 col-sm-4 col-md-3 text-right gr-background" >
+			<div class="categoria col-sm-4 col-md-3 text-right gr-background" >
 	            <h3 class="section-heading text-white">Guía de sexualidad</h3>
 	            <p class="text-white">Artículos sobre sexualidad, igualdad, género, autoestima, respeto y relaciones de pareja</p>
 	        </div>
 	        
-
+			<div class="col-sm-8 col-md-9" >
+	        	<?php include("../abandone-relacion-toxica/thumb.php"); ?>
+	        	<?php include("../carta-sobre-pornografia/thumb.php"); ?>
+	        	<?php include("../confesiones-la-regalada-de-las-fiestas/thumb.php"); ?>
 	        	<?php include("../que-es-tuppersex/thumb.php"); ?>
 	        	<?php include("../derecho-a-sexualidad/thumb.php"); ?>
 	        	<?php include("../squirt/thumb.php"); ?>
@@ -26,7 +29,7 @@
 	        	<?php include("../6-fantasias-femeninas/thumb.php"); ?>
 	        	<?php include("../que-vemos-chris-grey/thumb.php"); ?>
 	        	<?php include("../adopcion_igualitaria/thumb.php"); ?>
-
+			</div>
     
 	    
 		</div><!-- cierre row -->
@@ -41,15 +44,17 @@
 	<!-- posicion thumbnails-->
 	
 	    <div class="row">
-	        <div class="categoria col-xs-6 col-sm-4 col-md-3 text-right gr-background">
+	        <div class="categoria col-sm-4 col-md-3 text-right gr-background">
 	            <h3 class="section-heading text-white">Guía de sex toys</h3>
 	            <p class="text-white">Artículos sobre juguetes sexuales, sexo, relaciones de pareja, placer, independencia y autoestima
 	            </p>
 	        </div>
+			<div class="col-sm-8 col-md-9" >
 	        	<?php include("../juguetes-toxicos/thumb.php"); ?>
 	        	<?php include("../condon/thumb.php"); ?>
 	        	<?php include("../histeria/thumb.php"); ?>
-	        	<?php include("../salud-con-juguetes/thumb.php"); ?>	    
+	        	<?php include("../salud-con-juguetes/thumb.php"); ?>	
+			</div>    
 		</div><!-- cierre row -->
 	</div><!-- cierre container -->
 </section>

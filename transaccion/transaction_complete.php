@@ -22,8 +22,8 @@ $order = $order_result->fetch_object();
 $items = $mysqli->query("SELECT * FROM order_item WHERE order_id='$order->order_id'");
 
 if($state_pol==4){
-	$mysqli->query("UPDATE orders SET name='$name', email='$email', city='$shippingCity', country='$shippingCountry', address='$shippingAddress', telephone='$telephone', transaction_date='$date', payed=true, amount='$value' WHERE order_id='$order->order_id'")	or die('Could not query:' . mysqli_error());
-	$mysqli->query("UPDATE codes SET total_sold=total_sold+'$valor', times_used=times_used+1");
+	$mysqli->query("UPDATE orders SET name='$name', email='$email', city='$shippingCity', country='$shippingCountry', address='$shippingAddress', telephone='$telephone', transaction_date='$date', payed=true, amount='$value', discount_code='$discount_id' WHERE order_id='$order->order_id'")	or die('Could not query:' . mysqli_error());
+	$mysqli->query("UPDATE codes SET total_sold=total_sold+'$valor', times_used=times_used+1 WHERE code_id='$discount_id'");
 	if(!$order->stock_discount){
 		while($itm = $items->fetch_assoc()){
 			$qty = $itm['quantity'];

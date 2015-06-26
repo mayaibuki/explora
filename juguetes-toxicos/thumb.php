@@ -1,5 +1,5 @@
 <a href="../juguetes-toxicos" class="text-primary">
-	<div class="articulo thumbnail-link animated pulse col-xs-6 col-sm-4 col-md-3">
+	<div class="articulo thumbnail-link animated pulse col-xs-6 col-sm-6 col-md-4">
         <img src="../juguetes-toxicos/toxicos_md.jpg" alt="Juguetes toxicos">
             <div class="thumbnail-parrafo">
                 <h4 class="service-heading">¿Cómo saber si los juguetes sexuales son seguros para mi cuerpo?</h4>

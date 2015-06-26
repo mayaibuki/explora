@@ -151,7 +151,7 @@ session_start();
 			                <a href="/comprar/<?php echo $p_row['slug']; ?>/">
 			                    <div class="col-xs-6 col-sm-4 col-md-3 animated pulse">
 			                        <?php
-			                        $imgs = $mysqli->query("SELECT * FROM product_img WHERE product_id='$product_id'");
+			                        $imgs = $mysqli->query("SELECT * FROM product_img WHERE product_id='$product_id' ORDER BY img_order");
 			                        $count = 0;
 			                        while ($img =  $imgs->fetch_assoc()) {
 			                            if($count==0){

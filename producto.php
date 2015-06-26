@@ -77,8 +77,8 @@ while($row = $result->fetch_assoc()) {
       <div class="row description-cat">
         <div class="imagen col-sm-4">
           <?php 
-          $imgs = $mysqli->query("SELECT * FROM product_img WHERE product_id='$product_id'");
-          $how_imgs = $mysqli->query("SELECT * FROM how_product_img WHERE product_id='$product_id'");
+          $imgs = $mysqli->query("SELECT * FROM product_img WHERE product_id='$product_id' ORDER BY img_order");
+          $how_imgs = $mysqli->query("SELECT * FROM how_product_img WHERE product_id='$product_id' ORDER BY img_order");
 
           if (!$imgs) {
             die('Could not query:' . mysqli_error());
@@ -203,30 +203,18 @@ where p.product_id = '$product_id' order by a.attr_order");
 
                 <div class="row"> 
                   <div class="col-lg-12">
-                    <h3>¿Cómo se usa?</h3>
-                    <?php
-                    $count = 1;
-                    while($img= $how_imgs->fetch_assoc()){
-                      ?>
-                      <div class="col-sm-4">
-                        <img src="<?php echo $img['full_img']; ?>" alt="<?php echo $row['name']; ?>" width="100%" style="background:#f7f7f7;"/>
-                      </div>
-                      <?php
-                      $count++;
-                    }
-                    ?>
-                  <!--
-                  <div class="col-sm-4">
-                    <img src="#.png" alt="lubricar" width="100%" style="background:#f7f7f7;"/>
-                  </div>
-                  <div class="col-sm-4">
-                    <img src="#.png" alt="Insertar" width="100%" style="background:#f7f7f7;"/>
-                  </div>
-                  <div class="col-sm-4">
-                    <img src="#.png" alt="Prender" width="100%" style="background:#f7f7f7;"/>
-                  </div>
-                -->
-              </div>
+					<h3>¿Cómo se usa?</h3>
+					
+					
+					
+<!-- ******************************************************************
+June 22, 2015 9:50AM
+Quité el código de cómo se usa porque estaba evitando que elr esto del código se leyera
+- Maya-->
+
+
+
+					</div>
             </div>
             <br>
 
@@ -334,28 +322,22 @@ where p.product_id = '$product_id' order by a.attr_order");
       ?>
       </script>
       
-      
-      
-
-<!-- Facebook Conversion Code for Key Page Views - Productos -->
+      <!-- Facebook Conversion Code for Key Page Views - Productos -->
 <script>(function() {
-  var _fbq = window._fbq || (window._fbq = []);
-  if (!_fbq.loaded) {
-    var fbds = document.createElement('script');
-    fbds.async = true;
-    fbds.src = '//connect.facebook.net/en_US/fbds.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(fbds, s);
-    _fbq.loaded = true;
-  }
+var _fbq = window._fbq || (window._fbq = []);
+if (!_fbq.loaded) {
+var fbds = document.createElement('script');
+fbds.async = true;
+fbds.src = '//connect.facebook.net/en_US/fbds.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(fbds, s);
+_fbq.loaded = true;
+}
 })();
 window._fbq = window._fbq || [];
 window._fbq.push(['track', '6030178124731', {'value':'0.00','currency':'USD'}]);
 </script>
 <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6030178124731&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
-
-<!--  -->      
-      
       
     </body>
     <?php

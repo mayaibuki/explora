@@ -8,7 +8,7 @@ $currency = '$';
 $discount = 0;
 $discount_percentage = 0;
 $current_url = base64_encode("http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
-include '../_contenido/navigation_producto.php';
+include '../_contenido/navigation_cart.php';
 
 if($_SERVER['REQUEST_METHOD']==='POST'){
   $code = $_POST['code'];
@@ -120,7 +120,7 @@ if(isset($_SESSION['discount_percentage'])){
             $grandTotal = $grandTotal + 5500;
             $shipping = 5500;
           }
-	      echo '<tr><td colspan="5">Costos de envio</td>';
+	      echo '<tr><td colspan="5">Costos de envío</td>';
 	      echo '<td>'.$currency.number_format($shipping).'</td></tr>';
 	      echo '<tr><td colspan="5">Total</td>';
 	      echo '<td>'.$currency.number_format($grandTotal).'</td></tr>';
@@ -151,7 +151,7 @@ if(isset($_SESSION['discount_percentage'])){
   <div class="container">
     <div class="row">
      <div class="col-sm-offset-2 col-sm-8">
-       <h2>Paga con PayU </h2>
+       <h2>Llena tus datos </h2>
        <?php
        $ApiKey = 'Khrho3F1omIZYrvOMNXAYRU1FI';
        $merchant_id = '530309';
@@ -233,7 +233,41 @@ if(isset($_SESSION['discount_percentage'])){
 
 </div>
 </section>
-<?php include("../_contenido/newsletter.php"); ?>
+
+
+      <section id="como-pagar" class="bg-gradient-gray">
+        <div class="container" >            
+          <div class="row">
+            <div class="col-sm-offset-2 col-sm-8" >
+              <h3>¿Cómo puedo pagar?</h3>
+              <br>
+              <p class="descripcion">Comprar en explora <b>es muy fácil</b>.</p>
+              <p class="descripcion">Recibimos todos los métodos de pago y es <b>100% seguro.</b></p>
+              <div class="row">
+			  	<div class="col-xs-4">
+					<img src="../_img_website/creditcard.jpg" width="100%" alt="tarjeta de crédito o débito"/>              
+					<h5 class="text-center">Tarjeta de crédito o débito</h5>
+			  	</div>
+			  	<div class="col-xs-4" >
+					<img src="../_img_website/efecty.jpg" alt="efecty o baloto" width="100%" />
+					<h5 class="text-center">Dinero en efectivo</h5>
+			  	</div>
+			  	<div class="col-xs-4" >
+					<img src="../_img_website/pse.jpg" width="100%" alt="Pagos seguro en línea"/>              
+					<h5 class="text-center">Transferencia bancaria</h5>
+			  	</div>
+              </div>
+				<p class="descripcion">Te enviaremos un e-mail con la confirmación cuando recibamos tu pago, otro cuando te enviemos la mercancía (en un paquete discreto) y uno final para asegurarnos de que hayas recibido el producto con satisfacción.</p>
+				<p class="descripcion">Si tienes alguna <b>pregunta</b>, envía un e-mail a <a href="mailto:hola@explora.life">hola@explora.life</a> o puedes llamar al <a href="tel:+57-316-874-9597">(316) 874 9597</a>.</p> 
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+<?php //include("../_contenido/newsletter.php"); ?>
 <?php include("../_contenido/footer.php"); ?>
 <?php include("../_contenido/javas_2.php"); ?>
 <script type="text/javascript">

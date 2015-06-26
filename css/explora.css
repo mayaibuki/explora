@@ -40,7 +40,7 @@ p {
 }
 
 p.large {
-    font-size: 16px;
+    font-size: 1.5 em;
 }
 
 a,
@@ -378,7 +378,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default .navbar-brand {
-        font-size: 2em;
+        font-size: 1.5em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -1120,7 +1120,7 @@ body {
 
 .compartir{
     text-align: center;
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid #f7f7f7;
     margin: 0 0 30px 0;
 }
 
@@ -1396,7 +1396,7 @@ section#otros h5 {
 }
 
 .product-name{
-	max-height: 2em;
+	height: 2em;
 	overflow: hidden;
 	margin-bottom: 5px;
 }
@@ -1468,3 +1468,10 @@ fa-img{
 	display: inline-block;
 	width: 110px;
 	}
+	
+	
+	
+.categoria{
+	padding: 0 20px 10px 20px;
+	margin: 0 0 30px;
+}
