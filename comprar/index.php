@@ -88,7 +88,7 @@ session_start();
 			        </div>
 		            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-5 text-center">	
 						<h3 class="text-white text-center">Categorías:</h3>
-						<p class="text-center large">
+						<h4 class="text-center ">
 							<?php
 							$cat_count = 0;
 							$result = $mysqli->query('SELECT * FROM category');
@@ -104,7 +104,7 @@ session_start();
 							$cat_count++;
 							}
 							?>
-                        </p>
+                        </h4>
 			        </div>
 			    </div>
 		            
@@ -131,7 +131,7 @@ session_start();
                 <div class="imagen col-xs-12 col-sm-6 col-md-4">
                     <img src="<?php echo $row['img'] ?>" alt="<?php echo $row['name'] ?>" width="100%" height="" />
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-8">
+                <div class="col-xs-12 col-sm-6 col-md-offset-1 col-md-5">
                 	<div class="description-cat">
 	                    <?php echo $row['description'] ?>
                 	</div>
@@ -161,7 +161,7 @@ session_start();
 				                        $count = 0;
 				                        while ($img =  $imgs->fetch_assoc()) {
 				                            if($count==0){
-				                                echo '<div class="card-img" style="background-image: url(/media/timthumb.php?src='. $img['full_img'] .'&w=200)"> </div>
+				                                echo '<div class="card-img product-fix" style="background-image: url(/media/timthumb.php?src='. $img['full_img'] .'&w=200)"> </div>
                         						<div class="card-description text-center">
 					                                <h5 class="text-primary ">'.$p_row['name'].'</h5>
 													<p class="text-price text-secondary">$'.number_format($p_row['price']).'</p>	            			
@@ -179,7 +179,7 @@ session_start();
 					<?php
 		            }
 		            ?>
-	        		<a href="#/">		
+	        		<!--<a href="#/">		
 				        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 animated pulse">
 					        <div class="card division">
 								<div class="card-division">
@@ -188,14 +188,14 @@ session_start();
 			            		</div>
 					       	</div>
 				        </div>
-					</a>
+					</a>-->
 							        
 	            </div>
 	        </div>
 	    </div>
 	</section>
 	
-	
+	<!-- scroll to top-->
 	<a href="#page-top" class="page-scroll top-page-btn">
 		<h1>
 			  <i class="fa fa-lg fa-arrow-circle-up "></i>

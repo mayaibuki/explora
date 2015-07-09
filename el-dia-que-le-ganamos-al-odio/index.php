@@ -1,9 +1,7 @@
-<!--Website coded by www.mayaibuki.me – Some rights reserved, most photos are under some creative commons license-->
+<!--Website coded by www.mayaibuki.me – Some rights reserved-->
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -68,35 +66,45 @@
 
 
 	<?php include("../_contenido/facebook_share_comments.php"); ?>
-	<?php include("../_contenido/navigation_leer_articulo.php"); ?>
-
-    <!-- Header -->
-    <div class="hero_img" style="background-image:url('../media/articles/matrimonio_xl.jpg');">
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading">El día que le ganamos al odio</div>
-                <div class="intro-lead-in">Por Ramona González, <a href="https://twitter.com/ramonaquegrita" target="_blank">@ramonaquegrita</a> </div>
-				<div class="social-share">
-					<div class="fb-like" data-href="https://www.facebook.com/ExploraLife" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-					<div class="fb-share-button" data-href="" data-layout="button"></div>
-					<div class="fb-send" data-href=""></div>
-					<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-related="explora_life" data-count="none" data-hashtags="exploralife">Twittear</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-					<a href="whatsapp://send" data-text="Mira este artículo" data-href="" class="wa_btn wa_btn_s" style="display:none">WhatsApp</a>
-				</div>
-                
-
-
-            </div>
-        </div>
-    </div>
-    
-<section id="article">
+	<?php include("../modulos/navigation.php"); ?>
+<br /><br />
+	
+<section> 
 	<div class="container">
 	    <div class="row">
-	        <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
-	            <article>
+	        <div class="compartir col-sm-12 col-md-2">
+		        <div class="fixed-desktop">
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+						<a class="a2a_button_facebook"></a>
+						<a class="a2a_button_twitter"></a>
+						<a class="a2a_button_whatsapp"></a>
+						<a class="a2a_button_email"></a>
+					</div>
+					<script type="text/javascript">
+					var a2a_config = a2a_config || {};
+					a2a_config.locale = "es";
+					</script>
+					<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+					<!-- AddToAny END -->
+		            <h5 class="text-secondary">Compartir artículo</h5>
+		        </div>
+	        </div>
 
+	        <div class="col-md-5  article-img">
+				<img src="../media/articles/matrimonio_xl.jpg" alt="fantasias femeninas" width="100%" height="" />	
+				<p class="small text-secondary">
+					Photo: flickr
+				</p>
+			
+	        </div>
+					        
+	        <div class="articulo col-sm-7 col-md-5">
+	            <article>
+					<h1>El día que le ganamos al odio</h1>
+					<h5 class="text-secondary">Por Ramona González, <a href="https://twitter.com/ramonaquegrita" target="_blank">@ramonaquegrita</a></h5>
+					<h5 class="text-muted">Julio 26, 2015</h5>
+	
 <h3 class="section-parrafo">La aprobación del matrimonio entre parejas del mismo sexo le devolvió al mundo un poquito de esperanza, de fe en la vida.</h3>
 
 <p>El día que le ganamos al odio todos nos vestimos de arcoiris. La victoria fue en Estados Unidos, es cierto. Pero aquí, en Colombia, al otro lado de ‘América’, <b>volvimos a creer en la gente, en la justicia</b> y en la pasión por la vida.</p>
@@ -120,35 +128,21 @@
 <img src="../media/articles/bandera.gif" alt="bandera" width="100%" height="" />
 
 	            </article>
+			            
+	        </div>
+	        <div class="col-sm-5">
+				<?php include("../modulos/ads.php"); ?>
 	        </div>
 	    </div>
+	</div>
 </section>
 
-<!--
-    <div class="row">
-        <div class="compartir">
-				<h3>Compartir artículo</h3>
-				
-					<div class="social-share">
-						<div class="fb-like" data-href="https://www.facebook.com/ExploraLife" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-						<div class="fb-share-button" data-href="" data-layout="button"></div>
-						<div class="fb-send" data-href=""></div>
-						<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-related="explora_life" data-count="none" data-hashtags="exploralife">Twittear</a>
-						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-						<a href="whatsapp://send" data-text="Mira este artículo" data-href="" class="wa_btn wa_btn_s" style="display:none">WhatsApp</a>
-					</div>
-			
-
-        </div>
-    </div>
-    
-</div>-->
+</div>
 
 
-	<?php include("../_contenido/articulos_relacionados_1.php"); ?>
 
 
-    <section id="comments" class="">
+    <section id="comments" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 col-lg-offset-1 col-lg-2">
@@ -161,11 +155,18 @@
             </div>    
         </div>
     </section>
-   
     
-	<?php include("../modulos/newsletter.php"); ?>
-	<?php include("../modulos/footer.php"); ?>
-	<?php include("../modulos/javas.php"); ?>
+    
+    
+	<!-- scroll to top-->
+	<a href="#page-top" class="page-scroll top-page-btn">
+		<h1>
+			  <i class="fa fa-lg fa-arrow-circle-up "></i>
+		</h1>
+	</a>
+	<?php include("../_contenido/newsletter.php"); ?>
+	<?php include("../_contenido/footer.php"); ?>
+	<?php include("../_contenido/javas.php"); ?>
      
 
 </body>

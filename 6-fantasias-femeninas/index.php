@@ -1,5 +1,5 @@
-<!-- Image by https://www.flickr.com/photos/halinebr/7200215582/ license: http://creativecommons.org/licenses/by/2.0/ -->
-<!--Website coded by www.mayaibuki.me – Some rights reserved, most photos are under some creative commons license-->
+
+<!--Website coded by www.mayaibuki.me – Some rights reserved-->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -71,30 +71,48 @@
 
 	<?php include("../_contenido/facebook_share_comments.php"); ?>
 	<?php include("../_contenido/navigation_leer_articulo.php"); ?>
-
-    <!-- Header -->
-    <div class="hero_img" style="background-image:url('../_img_articulos/fantasias_xl.jpg');">
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading">Las 6 fantasias de las mujeres</div>
-                <div class="intro-lead-in">por Jorge Maya, 12 de Febrero 2015</div>
-            </div>
-        </div>
-    </div>
-    
-    
+<br /><br /><br /><br />	
 	
-	<section id="article">
-		<div class="container">
-		    <div class="row">
-		        <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
-		            <article>
+<section> 
+	<div class="container">
+	    <div class="row">
+	        <div class="compartir col-sm-12 col-md-2">
+		        <div class="fixed-desktop">
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+						<a class="a2a_button_facebook"></a>
+						<a class="a2a_button_twitter"></a>
+						<a class="a2a_button_whatsapp"></a>
+						<a class="a2a_button_email"></a>
+					</div>
+					<script type="text/javascript">
+					var a2a_config = a2a_config || {};
+					a2a_config.locale = "es";
+					</script>
+					<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+					<!-- AddToAny END -->
+		            <h5 class="text-secondary">Compartir artículo</h5>
+		        </div>
+ 	        </div>
+	        <div class="col-md-5  article-img">
+				<img src="../media/articles/fantasias_xl.jpg" alt="fantasias femeninas" width="100%" height="" />
+				<p class="small text-secondary">
+					Photo: Galina Arakelova
+				</p>
+			
+	        </div>
+					        
+	        <div class="articulo col-sm-7 col-md-5">
+	            <article>
+					<h1>Las 6 fantasias de las mujeres</h1>
+					<h5 class="text-muted">Por Jorge Maya, 12 de Febrero 2015</h5>
+	
 		            <p>Mucho se ha dicho sobre las fantasías eróticas de las mujeres, pero en general tenemos una idea equivocada sobre cuales son. Un estudio publicado en el <a href="http://onlinelibrary.wiley.com/doi/10.1111/jsm.12734/abstract" target="_blank"> Journal of Sexual Medicine</a> investigó las fantasías eróticas más y menos frecuentes.</p>
 		
 					<p>Pero primero que todo ¿qué es una fantasía? Una fantasía erótica es el interés o anhelo que se tiene de forma <b>inconsciente</b> por la realización de un acontecimiento que crea excitación sexual. Y se debe diferenciar de un deseo erótico, que es algo que deseas que ocurra <b>conscientemente</b>.</p>
 		
-					<h4 class="text-center text-muted">Fantasía = Inconsciente</h4>
-					<h4 class="text-center text-muted">Deseo = Consciente</h4>
+					<h4 class="text-center text-secondary">Fantasía = Inconsciente</h4>
+					<h4 class="text-center text-secondary">Deseo = Consciente</h4>
 					
 					<p>¿Tienes sueños mojados con personajes mitológicos, látigos y el baño de un bar? No te preocupes, tener fantasías es algo completamente normal y saludable, sin importar lo bizarras que te parezcan. Tus fantasías son creadas por tu subconsciente y no representan tus verdaderas inclinaciones, deseos o valores como persona. Muchas de nuestras fantasías existen sólo en nuestra mente y no necesariamente queremos que ocurran de verdad.
 			
@@ -108,6 +126,9 @@
 		
 					<h3>Disfrazarse o "Role-play"</h3>
 					<p>Disfrazarse y actuar con tu pareja es una fantasía muy sana, permite experimentar y romper la rutina en un entorno seguro. Los disfraces más comunes suelen ser de profesor y estudiante, policía y criminal, paciente y enfermera, sirvienta o mayor domo, prisionero, azafata, etc.</p>
+
+					<h3>Juguetes sexuales</h3>
+					<p>Estar en un lugar público mientras unas <a href="/comprar/#bolas-chinas">bolas chinas</a> u otro juguete estimula discretamente a la mujer, pero sólo ustedes dos saben. Es una fantasía que viven sólo las parejas más experimentadas. Otra fantasía es una usar un masajeador para entrar en calor antes de tener sexo, no sólo le agrega picante a la relación, también aumenta la posibilidad de tener un orgasmo. Aprende cuales son los diferentes tipos de <a href="/comprar/"> juguetes sexuales acá</a>.</p>
 		
 					<h3>Dominatrix</h3>
 					<p>Una dominatrix, suele ser una mujer que domina a su pareja en ropa muy sexy, latex, cuero, cadenas, vestida muy parecida a gatubela. Esta es una fantasía muy común, pues combina el sentirte deseada, que te rueguen por más y estar en una posición de poder y control absoluto.</p>
@@ -122,41 +143,28 @@
 					<p>Tener sexo con un completo extraño sin darle tu teléfono, ni decirle tu nombre, no volverlo a ver jamás. Sólo pensar que nunca sabrá quién eres y no va a poder juzgarte, genera un gran sentimiento de libertad, la oportunidad única de desinhibirte completamente sin ninguna repercusión social puede ser muy sexy, ya que la mayoría de mujeres son juzgadas y avergonzadas constantemente por su vida sexual<p>
 		
 					<p>En conclusión, las mujeres fantasean con sentirse amadas, tener el control, sentirse deseadas y sentirse libres de hacer lo que ellas quieran sin ninguna repercusión.</p>
-		            </article>
-		            
-		            <div class="text-center">
-			            <h4 class="text-muted">Fuentes:</h4>
-			            <a href="https://www.youtube.com/user/lacigreen" target="_blank">Laci Green</a>,
-			            <a href="http://onlinelibrary.wiley.com/doi/10.1111/jsm.12734/abstract" target="_blank">Journal of Sexual Medicine</a>
-		            </div>
-		            
-		            
-		        </div>
-		    </div>
-	</section>
-
-
-    <div class="row">
-        <div class=" compartir">
-	        <div class=" animate buzz">
-	            <h3>Compartir artículo</h3>
-	            <ul class="list-inline social-buttons">
-	            	<li><a href="https://www.facebook.com/sharer/sharer.php?app_id=113869198637480&sdk=joey&u=http%3A%2F%2Fexplora.life%2F6-fantasias-femeninas%2F&display=popup&ref=plugin" target="_blank"><i class="fa fa-facebook"></i></a>
-	            	</li>	                
-	            	<li><a href="https://twitter.com/share" data-text="Explora este artículo sobre sexualidad:" data-via="explora_life" data-lang="es" data-count="none" data-dnt="true" target="_blank"><i class="fa fa-twitter"></i></a>
-	                </li>
-	            </ul>
+	            </article>
+	            
+	            <div class="text-center">
+		            <h4 class="text-secondary">Fuentes:</h4>
+		            <a href="https://www.youtube.com/user/lacigreen" target="_blank">Laci Green</a>,
+		            <a href="http://onlinelibrary.wiley.com/doi/10.1111/jsm.12734/abstract" target="_blank">Journal of Sexual Medicine</a>
+	            </div>
+			            
 	        </div>
-        </div>
-    </div>
-    
+	        <div class="col-sm-5">
+				<?php include("../modulos/ads.php"); ?>
+	        </div>
+	    </div>
+	</div>
+</section>
+
 </div>
 
 
-	<?php include("../_contenido/articulos_relacionados_1.php"); ?>
 
 
-    <section id="comments" class="">
+    <section id="comments" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 col-lg-offset-1 col-lg-2">

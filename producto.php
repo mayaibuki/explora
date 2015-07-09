@@ -1,10 +1,10 @@
-<!--Website coded by www.mayaibuki.me-->
+<!--Website coded by www.mayaibuki.me – Some rights reserved, most photos are under some creative commons license-->
 <?php
 session_start();
 $serv_root = realpath($_SERVER["DOCUMENT_ROOT"]);
 $root = '/';
 @include_once('functions.php');
-include $serv_root.'/modulos/header.php';
+include $serv_root.'/_contenido/_header.php';
 $slug = $_GET['slug'];
 $result = $mysqli->query("SELECT * FROM product WHERE slug='$slug'");
 
@@ -19,8 +19,6 @@ while($row = $result->fetch_assoc()) {
   $imgFeatured = $imgFeatured_result->fetch_object();
 
   ?>
-  
-
   <link rel="stylesheet" type="text/css" href="/css/zoomingbox.min.css">
   <title>explora.life – <?php echo $row['name']; ?></title>
 
@@ -299,9 +297,9 @@ Quité el código de cómo se usa porque estaba evitando que elr esto del códig
 
 
 
-      <?php include("modulos/newsletter.php"); ?>
-      <?php include("modulos/footer.php"); ?>
-      <?php include("modulos/javas.php"); ?>
+      <?php include("_contenido/newsletter.php"); ?>
+      <?php include("_contenido/footer.php"); ?>
+      <?php include("_contenido/javas_2.php"); ?>
       <script type="text/javascript" src="/js/jquery.zoomingbox.min.js"></script>
       <script>
       $(document).ready(function(){
@@ -324,22 +322,22 @@ Quité el código de cómo se usa porque estaba evitando que elr esto del códig
       ?>
       </script>
       
-	<!-- Facebook Conversion Code for Key Page Views - Productos -->
-	<script>(function() {
-	var _fbq = window._fbq || (window._fbq = []);
-	if (!_fbq.loaded) {
-	var fbds = document.createElement('script');
-	fbds.async = true;
-	fbds.src = '//connect.facebook.net/en_US/fbds.js';
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(fbds, s);
-	_fbq.loaded = true;
-	}
-	})();
-	window._fbq = window._fbq || [];
-	window._fbq.push(['track', '6030178124731', {'value':'0.00','currency':'USD'}]);
-	</script>
-	<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6030178124731&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
+      <!-- Facebook Conversion Code for Key Page Views - Productos -->
+<script>(function() {
+var _fbq = window._fbq || (window._fbq = []);
+if (!_fbq.loaded) {
+var fbds = document.createElement('script');
+fbds.async = true;
+fbds.src = '//connect.facebook.net/en_US/fbds.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(fbds, s);
+_fbq.loaded = true;
+}
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', '6030178124731', {'value':'0.00','currency':'USD'}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6030178124731&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
       
     </body>
     <?php

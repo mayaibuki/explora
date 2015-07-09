@@ -1,10 +1,9 @@
-<!--Website coded by www.mayaibuki.me – Some rights reserved, most photos are under some creative commons license-->
+<!--Website coded by www.mayaibuki.me – Some rights reserved-->
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 
-    <meta charset="utf-8">
+	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Cómo usar un preservativo es fácil, pero hay que saber cómo hacerlo. Aquí encontraras todo lo que necesitas saber para usarlo de forma apropiada.">
@@ -68,100 +67,85 @@
 
 
 	<?php include("../_contenido/facebook_share_comments.php"); ?>
-	<?php include("../_contenido/navigation_leer_articulo.php"); ?>
-
-    <!-- Header -->
-    <div class="hero_img" style="background-image:url('../_img_articulos/condon_xl.jpg');">
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-heading">¿Cómo usar un condón?</div>
-                <div class="intro-lead-in">por Jorge Maya, 30 de Abril 2015</div>
-				<div class="social-share">
-					<div class="fb-like" data-href="https://www.facebook.com/ExploraLife" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-					<div class="fb-share-button" data-href="" data-layout="button"></div>
-					<div class="fb-send" data-href=""></div>
-					<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-related="explora_life" data-count="none" data-hashtags="exploralife">Twittear</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-					<a href="whatsapp://send" data-text="Mira este artículo" data-href="" class="wa_btn wa_btn_s" style="display:none">WhatsApp</a>
-				</div>
-                
-
-
-            </div>
-        </div>
-    </div>
-    
-<section id="article">
+	<?php include("../modulos/navigation.php"); ?>
+<br /><br />
+	
+<section> 
 	<div class="container">
 	    <div class="row">
-	        <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
+	        <div class="compartir col-sm-12 col-md-2">
+		        <div class="fixed-desktop">
+					<!-- AddToAny BEGIN -->
+					<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+						<a class="a2a_button_facebook"></a>
+						<a class="a2a_button_twitter"></a>
+						<a class="a2a_button_whatsapp"></a>
+						<a class="a2a_button_email"></a>
+					</div>
+					<script type="text/javascript">
+					var a2a_config = a2a_config || {};
+					a2a_config.locale = "es";
+					</script>
+					<script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+					<!-- AddToAny END -->
+		            <h5 class="text-secondary">Compartir artículo</h5>
+		        </div>
+	        </div>
+
+	        <div class="col-md-5  article-img">
+				<img src="../media/articles/condon_xl.jpg" alt="¿Cómo usar un condón?" width="100%" height="" />	
+				<p class="small text-secondary">
+					Photo: ThinkStock
+				</p>
+			
+	        </div>
+					        
+	        <div class="articulo col-sm-7 col-md-5">
 	            <article>
-	            <h3 class="section-parrafo">Usar un preservativo es fácil, pero hay que saber cómo hacerlo. Aquí encontraras todo lo que necesitas saber para usarlo de forma apropiada:</h3>
+					<h1>¿Cómo usar un condón?</h1>
+					<h5 class="text-muted">Por Jorge Maya, 30 de Abril 2015</h5>
+	
+	            <p class=" text-secondary"><i>Usar un preservativo es fácil, pero hay que saber cómo hacerlo. Aquí encontraras todo lo que necesitas saber para usarlo de forma apropiada:</i></p>
 				<h3>1. Verificar la fecha de vencimiento</h3>
 				<p>Mira la fecha de vencimiento y sólo usa condones que no estén vencidos.</p>
 				<h3>2. Revisar que haya aire en el empaque</h3>
 				<p>Los paquetes de los condones <b>NO</b> vienen empacados al vacío. Tiene aire por dentro y deben hacer un sonido al oprimirlos como un botón. Si notas que el aire se sale al presionarlo, o no hay aire, es posible que el condón esté vencido o tenga un roto y no puedes usarlo.</p>
 				<h3>3. Abrir el empaque con cuidado</h3>
 				<p>Con la yema de los dedos, empuja el condón a un lado, dándole espacio libre por donde rasgaremos el empaque. Luego, con la yema de los dedos rasga una esquina del empaque, nunca uses tus uñas o dientes.</p>
-				<img src="como-condon.jpg" alt="como ponerse un condon o preservativo" width="100%"/>
+				<img src="../media/articles/como-condon.jpg" alt="como ponerse un condon o preservativo" width="100%" height="" />
+				
 				<h3>4. Colocar el condón en el pene</h3>
 				<p>Primero, debes mirar cuál es el lado en que se desenvuelve.</p>
-				<p>Con la yema de los dedos, sujeta el depósito del condón <span class="text-muted">(el depósito es el espacio sobrante en la punta del condón)</span> y desenvuelve el condón sobre el pene, mientras este se encuentra erecto, asegurándote de que no quede aire dentro del condón.</p>			
+				<p>Con la yema de los dedos, sujeta el depósito del condón <span class="text-secondary">(el depósito es el espacio sobrante en la punta del condón)</span> y desenvuelve el condón sobre el pene, mientras este se encuentra erecto, asegurándote de que no quede aire dentro del condón.</p>			
 				<h3>5. Quitar el condón</h3>
 				<p>Al terminar, sujeta la base del condón mientras retiras el pene del cuerpo de tu pareja. Es ideal retirar el condón después de la eyaculación, pues el pene pierde rigidez y si se espera mucho tiempo, aumenta el riesgo de que el condón se quede dentro del cuerpo de tu pareja.</p>
 				<h3>6. Botarlo a la basura</h3>
 				<p>Después de quitarte el condón, revísalo para asegurarte que no se haya roto y deséchalo en la basura. Nunca en el inodoro para cuidar del medio ambiente.</p>
 				 
-				<div class='embed-container'>
+				<!--<div class='embed-container'>
 					<iframe src="https://www.youtube.com/embed/bGuaJ6_paa4?rel=0&amp;controls=0&amp;showinfo=0" frameborder='0' allowfullscreen></iframe>
-				</div>		
-				<p><blockquote>Recuerda nunca guardarlo en la billetera, pues el calor y la fricción de tenerlo ahí una semana puede dañarlo.</blockquote></p>
-							
+				</div>-->		
+				<p>Es recomendable usar un condón si vas a compartir <a href="/comprar/"><b>juguetes</b></a> con tu compañero para darle picante a tu relación u obtener un <b>orgasmo</b> más fácil. Recuerda nunca guardarlos en la billetera, pues el calor y la fricción de guardarlo allí puede dañarlo.</p>
+
+
 	            </article>
+	            
+
+			            
+	        </div>
+	        <div class="col-sm-5">
+				<?php include("../modulos/ads.php"); ?>
 	        </div>
 	    </div>
+	</div>
 </section>
 
-
-    <div class="row">
-        <div class="compartir">
-				<h3>Compartir artículo</h3>
-				
-					<div class="social-share">
-						<div class="fb-like" data-href="https://www.facebook.com/ExploraLife" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-						<div class="fb-share-button" data-href="" data-layout="button"></div>
-						<div class="fb-send" data-href=""></div>
-						<a href="https://twitter.com/share" class="twitter-share-button" data-lang="es" data-related="explora_life" data-count="none" data-hashtags="exploralife">Twittear</a>
-						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-						<a href="whatsapp://send" data-text="Mira este artículo" data-href="" class="wa_btn wa_btn_s" style="display:none">WhatsApp</a>
-					</div>
-				
-					
-<!--	  	           <ul class="list-inline social-buttons">
-	            	<li><a href="https://www.facebook.com/sharer/sharer.php?app_id=114545895322903&sdk=joey&u=http%3A%2F%2Fexplora.life%2Fcondon%2F&display=popup&ref=plugin&src=share_button" target="_blank"><i class="fa fa-facebook"></i></a>
-	            	</li>	                
-	            	<li><a href="https://twitter.com/share" data-text="Explora este artículo sobre sexualidad:" data-via="explora_life" data-lang="es" data-count="none" data-dnt="true" target="_blank"><i class="fa fa-twitter"></i></a>
-	                </li>
-	            </ul>-->
-        
-        
-        
-	        
-	        	<!--<h3>Síguenos en Facebook</h3>
-				<h3><div class="fb-page" data-href="https://www.facebook.com/exploralife" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/exploralife"><a href="https://www.facebook.com/exploralife">Explora.life</a></blockquote></div></div></h3>
-				-->	
-	        
-
-        </div>
-    </div>
-    
 </div>
 
 
-	<?php include("../_contenido/articulos_relacionados_1.php"); ?>
 
 
-<!--    <section id="comments" class="">
+    <section id="comments" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3 col-lg-offset-1 col-lg-2">
@@ -169,13 +153,20 @@
                     <p>Si quieres compartir este artículo y tu comentario en <b>tu muro</b>, activa la opción "Post on Facebook"</p>
                 </div>
                 <div class="col-sm-9 col-lg-8">
-                    <div class="fb-comments" data-href="http://explora.life/condon/" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
+                    <div class="fb-comments" data-href="http://explora.life/XXXXurl/" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
                 </div>
             </div>    
         </div>
     </section>
--->    
     
+    
+    
+	<!-- scroll to top-->
+	<a href="#page-top" class="page-scroll top-page-btn">
+		<h1>
+			  <i class="fa fa-lg fa-arrow-circle-up "></i>
+		</h1>
+	</a>
 	<?php include("../_contenido/newsletter.php"); ?>
 	<?php include("../_contenido/footer.php"); ?>
 	<?php include("../_contenido/javas.php"); ?>

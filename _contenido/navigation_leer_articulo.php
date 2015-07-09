@@ -21,7 +21,7 @@
                         <a href="#page-top"></a>
                     </li>
                 <li>
-                    <a class="page-scroll" href="/comprar/">Productos</a>
+                    <a class="page-scroll" href="/comprar/">Comprar</a>
                 </li>                    
                 <li>
                     <a class="page-scroll" href="/leer/">Leer</a>
@@ -35,7 +35,7 @@
                 <li>
                     <a class="page-scroll" href="https://www.facebook.com/ExploraLife" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
                 </li>                    <li>
-                        <a class="page-scroll btn btn-cart" href="/cart"> <i class="fa fa-shopping-cart"> <?php if($_SESSION["count"]>0){ echo $_SESSION["count"]; } ?></i>
+                        <a class="page-scroll btn btn-cart" href="/cart"> <i class="fa fa-lg fa-shopping-cart"> <?php if($_SESSION["count"]>0){ echo $_SESSION["count"]; } ?></i>
 						</a>
                     </li>                
 				</ul>

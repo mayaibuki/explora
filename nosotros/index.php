@@ -67,7 +67,8 @@ session_start();
 					<div class=" col-sm-7 ">
 						<h1>¿Qué es explora.life?</h1>
 						<p class="large"> Explora es una organización que enseña educación sexual actualizada y positiva por medio de nuestra <a href="/leer/">revista online</a>, la <a href="/comprar/">tienda online</a> y los <a href="/tuppersex/">talleres TupperSex</a>.</p>
-						<p class="large text-muted"> El sexo es una experiencia maravillosa que nos hace crecer si se practica de forma consensual.</p>
+						<p class="large text-secondary"> El sexo es una experiencia maravillosa que nos hace crecer si se practica de forma consensual.</p>
+						<p class="large">Conoce más sobre la <a href="http://explora.life/problematicas-de-sexualidad-en-colombia/">problemática</a> que queremos solucionar. Contáctanos si quieres que publiquemos tus escritos o ser parte de Explora.life</p>
 				    </div>
 					<div class=" col-sm-5 ">
 						<img class="img-centered" src="../media/nosotros.png" alt="nosotros" width="100%"/>

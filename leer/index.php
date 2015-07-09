@@ -52,7 +52,7 @@ session_start();
 	        
 	
 	<!-- thumbnails-->
-	<section id="" >
+	<section id="historias" >
 		<div class="container">
 		    <div class="row">
 		        <div class="col-sm-4 col-md-3 animated pulse">
@@ -65,9 +65,24 @@ session_start();
 				       	</div>
 			        </a>
 		        </div>
+
+			<div class="col-sm-8 col-md-9">
+
+				<a href="/el-dia-en-que-descubri-la-belleza-femenina/">
+				    <div class="col-sm-6 col-md-4 animated pulse">
+				        <div class="card articulo">
+							<div class="card-img-tab" style="background-image: url('/media/articles/belleza-femenina_sm.jpg');"></div>
+							<div class="card-description">
+				    			<h5 class="text-primary">El día en que descubrí la belleza femenina</h5>
+				    			<p>Comenzaré por decir que soy mujer, una joven común y corriente que come, lee, no hace ejercicio y se alimenta sin contar las calorías que consume cada día. Nací en una familia extremadamente heterosexual y crecí con dos hermanos que parecen seguir el mismo esquema. Cuando era más joven de lo que soy ahora, en vez de comer hombres me dedicaba a comer libros. Frente a mis amigos era una chica más en medio de la multitud errante que compone nuestra existencia.</p>
+				    			<div class="gr-ending"></div>
+				    		</div>
+				       	</div>	  
+				    </div>
+				</a>
 	
 				<a href="/abandone-relacion-toxica/">
-				    <div class="col-sm-4 col-md-3 animated pulse">
+				    <div class="col-sm-6 col-md-4 animated pulse">
 				        <div class="card articulo">
 							<div class="card-img-tab" style="background-image: url('/media/articles/relacion-toxica_sm.jpg');"></div>
 							<div class="card-description">
@@ -80,7 +95,7 @@ session_start();
 				</a>
 									
 				<a href="/confesiones-la-regalada-de-las-fiestas/">
-				    <div class="col-sm-4 col-md-3 animated pulse">
+				    <div class="col-sm-6 col-md-4 animated pulse">
 				        <div class="card articulo">
 							<div class="card-img-tab" style="background-image: url('/media/articles/ramona01_sm.jpg');"></div>
 							<div class="card-description">
@@ -93,7 +108,7 @@ session_start();
 				</a>
 	
 				<a href="/squirt/">
-				    <div class="col-sm-4 col-md-3 animated pulse">
+				    <div class="col-sm-6 col-md-4 animated pulse">
 				        <div class="card articulo">
 							<div class="card-img-tab" style="background-image: url('/media/articles/lavar_sm.jpg');"></div>
 							<div class="card-description">
@@ -104,9 +119,13 @@ session_start();
 				       	</div>	  
 				    </div>
 				</a>
-									
+				
 		    </div>
-		        	
+		</div>
+	</section>
+		    
+	<section id="aprender" >
+		<div class="container">		        	
 		    <div class="row">    	
 		        <div class="col-sm-4 col-md-3 animated pulse">
 			        <a href="#">
@@ -119,8 +138,22 @@ session_start();
 			        </a>
 		        </div>
 	
+			<div class="col-sm-8 col-md-9">
+				<a href="/mitos-sobre-la-masturbacion-femenina/">
+				    <div class="col-sm-6 col-md-4 animated pulse">
+				        <div class="card articulo">
+							<div class="card-img-tab" style="background-image: url('/media/articles/shy_sm.jpg');"></div>
+							<div class="card-description">
+				    			<h5 class="text-primary">Mitos sobre la masturbación femenina</h5>
+				    			<p>Estudios indican que, hoy en día, la mayoría de las mujeres se masturban. Pero todavía hay muchos malentendidos sobre las mujeres que les gusta tocarse solas (o que sus parejas las toque). Ya estamos en el año 2015 y es hora de derrumbar los mitos que existen sobre la masturbación femenina.</p>
+				    			<div class="gr-ending"></div>
+				    		</div>
+				       	</div>	  
+				    </div>
+				</a>
+				
 				<a href="/condon/">
-				    <div class="col-sm-4 col-md-3 animated pulse">
+				    <div class="col-sm-6 col-md-4 animated pulse">
 				        <div class="card articulo">
 							<div class="card-img-tab" style="background-image: url('/media/articles/condon_sm.jpg');"></div>
 							<div class="card-description">
@@ -133,7 +166,7 @@ session_start();
 				</a>
 				
 				<a href="/confesiones-la-regalada-de-las-fiestas/">
-				    <div class="col-sm-4 col-md-3 animated pulse">
+				    <div class="col-sm-6 col-md-4 animated pulse">
 				        <div class="card articulo">
 							<div class="card-img-tab" style="background-image: url('/media/articles/sexandcity2_md.jpg');"></div>
 							<div class="card-description">
@@ -146,7 +179,7 @@ session_start();
 				</a>
 				
 				<a href="/histeria/">
-				    <div class="col-sm-4 col-md-3 animated pulse">
+				    <div class="col-sm-6 col-md-4 animated pulse">
 				        <div class="card articulo">
 							<div class="card-img-tab" style="background-image: url('/media/articles/hysteria_sm.jpg');"></div>
 							<div class="card-description">
@@ -160,7 +193,7 @@ session_start();
 				
 	
 				<a href="/6-fantasias-femeninas/">
-				    <div class="col-sm-4 col-md-3 animated pulse">
+				    <div class="col-sm-6 col-md-4 animated pulse">
 				        <div class="card articulo">
 							<div class="card-img-tab" style="background-image: url('/media/articles/fantasias_sm.jpg');"></div>
 							<div class="card-description">
@@ -173,7 +206,7 @@ session_start();
 				</a>
 				
 				<a href="/que-vemos-chris-grey/">
-				    <div class="col-sm-4 col-md-3 animated pulse">
+				    <div class="col-sm-6 col-md-4 animated pulse">
 				        <div class="card articulo">
 							<div class="card-img-tab" style="background-image: url('/media/articles/grey_reading_sm.jpg');"></div>
 							<div class="card-description">
@@ -186,7 +219,7 @@ session_start();
 				</a>
 	
 				<a href="/juguetes-toxicos/">
-				    <div class="col-sm-4 col-md-3 animated pulse">
+				    <div class="col-sm-6 col-md-4 animated pulse">
 				        <div class="card articulo">
 							<div class="card-img-tab" style="background-image: url('/media/articles/toxicos_sm.jpg');"></div>
 							<div class="card-description">
@@ -199,7 +232,7 @@ session_start();
 				</a>
 	
 				<a href="/salud-con-juguetes/">
-				    <div class="col-sm-4 col-md-3 animated pulse">
+				    <div class="col-sm-6 col-md-4 animated pulse">
 				        <div class="card articulo">
 							<div class="card-img-tab" style="background-image: url('/media/articles/lelogigi_sm.jpg');"></div>
 							<div class="card-description">
@@ -210,9 +243,15 @@ session_start();
 				       	</div>	  
 				    </div>
 				</a>
+			</div>
 	
 			</div><!-- cierre row -->
-	
+		</div>
+	</section>
+		    
+	<section id="derechos" >
+		<div class="container">
+
 		    <div class="row">    	
 		        <div class="col-sm-4 col-md-3 animated pulse">
 			        <a href="#">
@@ -224,9 +263,40 @@ session_start();
 				       	</div>
 			        </a>
 		        </div>
+
+			<div class="col-sm-8 col-md-9">
+				
+				<a href="/from-colombia-with-love-pendejos/">
+				    <div class="col-sm-6 col-md-4 animated pulse">
+				        <div class="card articulo">
+							<div class="card-img-tab" style="background-image: url('/media/articles/donald-trump-paulina-vega_sm2.jpg');"></div>
+							<div class="card-description">
+				    			<h5 class="text-primary">From Colombia with love, pendejos</h5>
+				    			<p>Donald Trump en Estados Unidos y la actriz María Belén Mora en Chile, se encargaron de recordarnos por estos días que seguimos siendo violadores, narcotraficantes y putas en el resto del mundo. Aquí me voy a quedar con lo de “putas”, que es lo más entretenido. De los violadores y narcotraficantes hablarán personas más cultas.
+No somos putas, ojalá, señor Trump, ojalá señora Mora. Ojalá las mujeres en Colombia y en otros países de América Latina pudiéramos tener determinación sobre nuestro cuerpo, tomar nuestras propias decisiones sin miedo al marido y encontrar la libertad y equidad establecida para todos los ciudadanos en la Constitución. Ojalá pudiéramos caber en esa palabra, “puta”, porque aquí vamos llamando “putas” a las que tomamos anticonceptivos, nos divorciamos, nos masturbamos y tenemos sexo con quien queramos y no con quien nos toca. </p>
+				    			<div class="gr-ending"></div>
+				    		</div>
+				       	</div>	  
+				    </div>
+				</a>
+
+	
+				<a href="/problematicas-de-sexualidad-en-colombia/">
+				    <div class="col-sm-6 col-md-4 animated pulse">
+				        <div class="card articulo">
+							<div class="card-img-tab" style="background-image: url('/media/articles/rose_sm.jpg');"></div>
+							<div class="card-description">
+				    			<h5 class="text-primary">Problemáticas de sexualidad en Colombia</h5>
+				    			<p>Existe una jerarquía invisible que discrimina, humilla, lastima, empobrece y asesina a diario a algunos hombres y a muchísimas mujeres. Explora.life quiere erradicar la desigualdad y la falta de libertad sexual que afectan tanto hombres como mujeres. Para esto trabajamos para resolver estos problemas:</p>
+				    			<div class="gr-ending"></div>
+				    		</div>
+				       	</div>	  
+				    </div>
+				</a>
+
 	
 				<a href="/el-dia-que-le-ganamos-al-odio/">
-				    <div class="col-sm-4 col-md-3 animated pulse">
+				    <div class="col-sm-6 col-md-4 animated pulse">
 				        <div class="card articulo">
 							<div class="card-img-tab" style="background-image: url('/media/articles/matrimonio_sm.jpg');"></div>
 							<div class="card-description">
@@ -240,7 +310,7 @@ session_start();
 				</a>
 	
 				<a href="/derecho-a-sexualidad/">
-				    <div class="col-sm-4 col-md-3 animated pulse">
+				    <div class="col-sm-6 col-md-4 animated pulse">
 				        <div class="card articulo">
 							<div class="card-img-tab" style="background-image: url('/media/articles/derecho-a-sexualidad_sm.jpg');"></div>
 							<div class="card-description">
@@ -253,7 +323,7 @@ session_start();
 				</a>
 	
 				<a href="/sexo-consensual/">
-				    <div class="col-sm-4 col-md-3 animated pulse">
+				    <div class="col-sm-6 col-md-4 animated pulse">
 				        <div class="card articulo">
 							<div class="card-img-tab" style="background-image: url('/media/articles/consenso_sm.jpg');"></div>
 							<div class="card-description">
@@ -266,7 +336,7 @@ session_start();
 				</a>
 				
 				<a href="/adopción-igualitaria/">
-				    <div class="col-sm-4 col-md-3 animated pulse">
+				    <div class="col-sm-6 col-md-4 animated pulse">
 				        <div class="card articulo">
 							<div class="card-img-tab" style="background-image: url('/media/articles/family_sm.jpg');"></div>
 							<div class="card-description">
@@ -277,7 +347,7 @@ session_start();
 				       	</div>	  
 				    </div>
 				</a>
-			
+			</div>
 				
 			</div><!-- cierre row -->
 		</div><!-- cierre container -->

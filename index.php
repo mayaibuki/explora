@@ -19,32 +19,28 @@ session_start();
 	
 	<div class="container">
 	    <div class="row">
-			<a href="/el-dia-que-le-ganamos-al-odio/">
+			<a href="/from-colombia-with-love-pendejos/">
 		        <div class="col-sm-8 animated pulse">
 					<div class="card-wide articulo">
-						<div class="card-wide-img" style="background-image: url('/media/articles/matrimonio_md.jpg');"></div>
+						<div class="card-wide-img" style="background-image: url('/media/articles/donald-trump-paulina-vega_sm2.jpg');"></div>
 						<div class="card-description">
-	            			<h5 class="text-primary">El día que le ganamos al odio</h5>
-	            			<p>La aprobación del matrimonio entre parejas del mismo sexo le devolvió al mundo un poquito de esperanza, de fe en la vida.
-El día que le ganamos al odio todos nos vestimos de arcoiris. La victoria fue en Estados Unidos, es cierto. Pero aquí, en Colombia, al otro lado de ‘América’, volvimos a creer en la gente, en la justicia y en la pasión por la vida.
-El día que le ganamos al odio recuperamos la esperanza. Entendimos que somos realmente iguales ante la ley, sentimos que nuestra Corte Constitucional, inspirada en los jueces estadounidenses, le hará justicia al ideal de equidad que cimentó la Constitución de 1991. Que, siguiendo a Barack Obama la Corte entenderá que "sobre todas las diferencias, somos todos iguales” y que el “amor es el amor” y que si en Estados Unidos no hay “ciudadanos de segunda”, aquí tampoco.
-El día que le ganamos al odio confirmamos que a punta de besos, abrazos y colores, podemos superar la discriminación.
-El día que le ganamos al odio recordamos el informe que la ONG ‘Colombia Diversa’ presentó sobre el sufrimiento de la población LGBT en las cárceles del país. “Tienen que enfrentarse a la violencia por parte de sus compañeros de reclusión y al rechazo de las autoridades. Sin contar que se les niega, usualmente, su derecho a la visita íntima”, denunció el periódico El Espectador basado en el informe. Dijimos que esto debe cambiar, que como sociedad no podemos permitirlo, debemos cuestionarlo, gritarlo, insistir en la transformación. 
-</p>
+	            			<h5 class="text-primary">From Colombia with love, pendejos</h5>
+	            			<p>Donald Trump en Estados Unidos y la actriz María Belén Mora en Chile, se encargaron de recordarnos por estos días que seguimos siendo violadores, narcotraficantes y putas en el resto del mundo. Aquí me voy a quedar con lo de “putas”, que es lo más entretenido. De los violadores y narcotraficantes hablarán personas más cultas.
+No somos putas, ojalá, señor Trump, ojalá señora Mora. Ojalá las mujeres en Colombia y en otros países de América Latina pudiéramos tener determinación sobre nuestro cuerpo, tomar nuestras propias decisiones sin miedo al marido y encontrar la libertad y equidad establecida para todos los ciudadanos en la Constitución. Ojalá pudiéramos caber en esa palabra, “puta”, porque aquí vamos llamando “putas” a las que tomamos anticonceptivos, nos divorciamos, nos masturbamos y tenemos sexo con quien queramos y no con quien nos toca. </p>
 	            			<div class="gr-ending"></div>
 	            		</div>
 			       	</div>
 		        </div>
 			</a>
 
-			<a href="/comprar/we-vibe-4-purple/">
+			<a href="/comprar/lelo-luna-beads-black/">
 		        <div class="col-sm-4 animated pulse">
 			        <div class="card producto">
-						<div class="card-img" style="background-image: url('/media/product/we-vibe-4.jpg');"></div>
+						<div class="card-img product-fix" style="background-image: url('/media/product/lelo-luna-beads-black/1.jpg');"></div>
 						<div class="card-description text-center">
-	            			<h5 class="text-primary">We vibe 4</h5>
-	            			<h3 class="text-muted">Vibrador para parejas</h3>
-	            			<p class="text-price featured-thumb">$559.990</p>
+	            			<h5 class="text-primary">Luna beads, Lelo</h5>
+	            			<h3 class="text-muted">Bolas chinas</h3>
+	            			<p class="text-price featured-thumb">$119.990</p>
 	            			<div class="gr-ending"></div>
 	            		</div>
 			       	</div>
@@ -70,7 +66,7 @@ El día que le ganamos al odio recordamos el informe que la ONG ‘Colombia Dive
 			<a href="/comprar/zizo-innie-vibe-purple/" >   
 		        <div class="col-xs-6 col-sm-4 animated pulse">
 			        <div class="card producto">
-						<div class="card-img" style="background-image: url('/media/product/1427130061571203238.jpg');"></div>
+						<div class="card-img product-fix" style="background-image: url('/media/product/1427130061571203238.jpg');"></div>
 						<div class="card-description text-center">
 	            			<h5 class="text-primary">Zizo Innie</h5>
 	            			<h3 class="text-muted">Vibrador</h3>
@@ -92,14 +88,14 @@ El día que le ganamos al odio recordamos el informe que la ONG ‘Colombia Dive
 		        </div>
 			</a>
 	        
-	    <a href="comprar/lelo-luna-beads-black/">
+	    <a href="comprar/kaya-rabbit-vibe-blue/">
 	        <div class="col-xs-6 col-sm-4 animated pulse">
 		        <div class="card producto">
-					<div class="card-img" style="background-image: url('/media/product/lelo-luna-beads-black/1.jpg');"></div>
+					<div class="card-img product-fix" style="background-image: url('/media/product/kaya-rabbit-vibe-blue/1427129992644482738.jpg');"></div>
 					<div class="card-description text-center">
-            			<h5 class="text-primary">Lelo Luna beads</h5>
-            			<h3 class="text-muted">Bolas chinas</h3>
-            			<p class="text-price">$119,990</p>
+            			<h5 class="text-primary">Kaya</h5>
+            			<h3 class="text-muted">Vibrador Rabbit</h3>
+            			<p class="text-price">$249.990</p>
             			<div class="gr-ending"></div>
             		</div>
 		       	</div>
