@@ -1,44 +1,89 @@
 <section id="otros" class="bg-light-gray">
     <div class="container">
-        <div class="row col-xs-12 col-md-offset-1 col-md-10">
+        <div class="row">
         <h3 class="section-heading">Artículos relacionados</h3>
         
-            <div class="col-xs-4 col-md-4 animated pulse">
-            	<a class="page-scroll" href="../comprar"><div class="otros_imgbg" style="background-image: url('../_img_productos/ida-packaging.jpg');"><h5>Juguetes sexuales</h5>
-       			</div></a>
-            </div>
-        
-            <div class="col-xs-4 col-md-4 animated pulse">
-            	<a class="page-scroll" href="../condon"><div class="otros_imgbg" style="background-image: url('../_img_articulos/condon_sm.jpg');"><h5>¿Cómo usar un condón?</h5>
-       			</div></a>
-            </div>
-        
-            <div class="col-xs-4 col-md-4 animated pulse">
-            	<a class="page-scroll" href="../histeria"><div class="otros_imgbg" style="background-image: url('../_img_articulos/hysteria_sm.jpg');"><h5>La Histeria Femenina</h5>
-       			</div></a>
-            </div>
-            
-            <div class="col-xs-4 col-md-4 animated pulse">
-            	<a class="page-scroll" href="../sexo-consensual"><div class="otros_imgbg" style="background-image: url('../_img_articulos/consenso_sm.jpg');"><h5>¿Qué es el sexo con consentimiento?</h5>
-       			</div></a>
-            </div>
+			<a href="/condon/">
+			    <div class="col-xs-6  col-sm-4 col-lg-2 animated pulse">
+			        <div class="card articulo">
+						<div class="card-img-tab" style="background-image: url('/media/articles/condon_sm.jpg');"></div>
+						<div class="card-description">
+			    			<h5 class="text-primary">¿Cómo usar un condón?</h5>
+			    			<p>Usar un preservativo es fácil, pero hay que saber cómo hacerlo. Aquí encontrarás todo lo que necesitas saber para usarlo de forma apropiada.</p>
+			    			<div class="gr-ending"></div>
+			    		</div>
+			       	</div>	  
+			    </div>
+			</a>
 
 
-            <div class="col-xs-4 col-md-4 animated pulse">
-            	<a class="page-scroll" href="../que-es-tuppersex"><div class="otros_imgbg" style="background-image: url('../_img_articulos/sexandcity2_md.jpg');"><h5>¿Qué es un TupperSex?</h5>
-       			</div></a>
-            </div>
+			<a href="/comprar/we-vibe-4-purple/">
+		        <div class="col-xs-6  col-sm-4 col-lg-2 animated pulse">
+			        <div class="card producto">
+						<div class="card-img" style="background-image: url('/media/product/we-vibe-4.jpg');"></div>
+						<div class="card-description text-center">
+	            			<h5 class="text-primary">We vibe 4</h5>
+	            			<h3 class="text-muted">Vibrador para parejas</h3>
+	            			<p class="text-price featured-thumb">$559.990</p>
+	            			<div class="gr-ending"></div>
+	            		</div>
+			       	</div>
+		        </div>
+			</a>
 
-            <div class="col-xs-4 col-md-4 animated pulse">
-            	<a href="../que-vemos-chris-grey"><div class="otros_imgbg" style="background-image: url('../_img_articulos/grey_reading_sm.jpg'); height:100%;"><h5>¿Qué vemos en Christian Grey?</h5>
-       			</div></a>
-            </div>            
-            
-<!--            <div class="col-xs-4 col-md-4 animated pulse">
-            	<a href="../confesiones-la-regalada-de-las-fiestas"><div class="otros_imgbg" style="background-image: url('../_img_articulos/ramona01_sm.jpg'); height:100%;"><h5>Cómo evitar ser la regalada de las fiestas</h5>
-       			</div></a>
-            </div>
--->
+	    <a href="/comprar/lelo-luna-beads-black/">
+	        <div class="col-xs-6  col-sm-4 col-lg-2 animated pulse">
+		        <div class="card producto">
+					<div class="card-img" style="background-image: url('/media/product/lelo-luna-beads-black/1.jpg');"></div>
+					<div class="card-description text-center">
+            			<h5 class="text-primary">Lelo Luna beads</h5>
+            			<h3 class="text-muted">Bolas chinas</h3>
+            			<p class="text-price">$119,990</p>
+            			<div class="gr-ending"></div>
+            		</div>
+		       	</div>
+	        </div>
+	    </a>
+
+			<a href="/6-fantasias-femeninas/">
+			    <div class="col-xs-6  col-sm-4 col-lg-2 animated pulse">
+			        <div class="card articulo">
+						<div class="card-img-tab" style="background-image: url('/media/articles/fantasias_sm.jpg');"></div>
+						<div class="card-description">
+			    			<h5 class="text-primary">Las 6 fantasías de la mujer</h5>
+			    			<p>Mucho se ha dicho sobre las fantasías eróticas de las mujeres, pero en general tenemos una idea equivocada sobre cuales son. Un estudio publicado en el Journal of Sexual Medicine investigó las fantasías eróticas más y menos frecuentes. Pero primero que todo ¿qué es una fantasía? Una fantasía erótica es el interés o anhelo que se tiene de forma inconsciente por la realización de un acontecimiento que crea excitación sexual. Y se debe diferenciar de un deseo erótico, que es algo que deseas que ocurra conscientemente.</p>
+			    			<div class="gr-ending"></div>
+			    		</div>
+			       	</div>	  
+			    </div>
+			</a>
+
+			<a href="/tuppersex/">		
+		        <div class="col-xs-6  col-sm-4 col-lg-2 animated pulse">
+			        <div class="card division">
+						<div class="card-division">
+	            			<h5>Ver más</h5>
+	            			<h4 class="text-cta">TupperSex <i class="fa fa-comments"></i></h4> 
+	            		</div>
+			       	</div>
+		        </div>
+			</a>
+
+			<a href="/sexo-consensual/">
+			    <div class="col-xs-6  col-sm-4 col-lg-2 animated pulse">
+			        <div class="card articulo">
+						<div class="card-img-tab" style="background-image: url('/media/articles/consenso_sm.jpg');"></div>
+						<div class="card-description">
+			    			<h5 class="text-primary">¿Qué es el sexo con consentimiento?</h5>
+			    			<p>El sexo con consentimiento es cuando todas las personas involucradas en el acto sexual quieren participar. Si todos expresan un claro “Si”, entonces hay consentimiento.</p>
+			    			<div class="gr-ending"></div>
+			    		</div>
+			       	</div>	  
+			    </div>
+			</a>
+
+
+
         </div> 
     </div>
 </section>

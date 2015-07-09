@@ -35,8 +35,11 @@
             </div>            
             
             <div class="col-xs-6 col-sm-4 animated pulse">
-            	<a href="confesiones-la-regalada-de-las-fiestas"><div class="otros_imgbg" style="background-image: url('_img_articulos/ramona01_sm.jpg'); height:100%;"><h5>Cómo evitar ser la regalada de las fiestas</h5>
-       			</div></a>
+            	<a href="confesiones-la-regalada-de-las-fiestas">
+	            	<div class="otros_imgbg" style="background-image: url('_img_articulos/ramona01_sm.jpg'); height:100%;">
+	            		<h5>Cómo evitar ser la regalada de las fiestas</h5>
+	       			</div>
+	       		</a>
             </div>
 
 

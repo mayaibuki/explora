@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="900px" height="900px" viewBox="0 0 900 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FB61AE" offset="0%"></stop>
+            <stop stop-color="#F7501C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="logo" sketch:type="MSArtboardGroup">
+            <path d="M313.7775,1 L586.2225,1 C676.575,1 721.74,1 770.3775,16.375 C823.4775,35.7025 865.2975,77.5225 884.625,130.6225 C900,179.2525 900,224.4325 900,314.7775 L900,587.2225 C900,677.575 900,722.74 884.625,771.3775 C865.2975,824.4775 823.4775,866.2975 770.3775,885.6175 C721.74,901 676.575,901 586.2225,901 L313.7775,901 C223.425,901 178.2525,901 129.6225,885.6175 C76.5225,866.2975 34.7025,824.4775 15.375,771.3775 C0,722.74 0,677.575 0,587.2225 L0,314.7775 C0,224.4325 0,179.2525 15.375,130.6225 C34.7025,77.5225 76.5225,35.7025 129.6225,16.375 C178.2525,1 223.425,1 313.7775,1 L313.7775,1" id="Icon-Shape" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup"></path>
+            <g id="explora_logo22" sketch:type="MSLayerGroup" transform="translate(77.000000, 193.500000)" fill="#FFFFFF">
+                <g id="cubos" sketch:type="MSShapeGroup">
+                    <path d="M554.794919,389.489292 L573,400 L746.205081,300 L746.205081,100 L573,0 L399.794919,100 L399.794919,107.180328 L554.794919,196.75 L554.794919,389.489292 Z" id="Polygon-1"></path>
+                    <path d="M346.205081,105.787571 L346.205081,100 L173,0 L-0.205080757,100 L-0.205080757,300 L173,400 L188.794919,390.880799 L188.794919,196.75 L346.205081,105.787571 Z" id="Polygon-1"></path>
+                    <polygon id="Polygon-1" points="373 103 546.205081 203 546.205081 403 373 503 199.794919 403 199.794919 203 "></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

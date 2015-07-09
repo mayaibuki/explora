@@ -1,44 +1,31 @@
-<!-- Image by https://www.flickr.com/photos/halinebr/7200215582/ license: http://creativecommons.org/licenses/by/2.0/ -->
-<!--Website coded by www.mayaibuki.me – Some rights reserved, most photos are under some creative commons license-->
+<!--Website coded by www.mayaibuki.me -->
+<?php 
+session_start();
+@include_once('../functions.php');
+?>
 <!DOCTYPE html>
 <html lang="es">
+<header>
+	<meta charset="utf-8">
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Explora.life promueve el entendimiento y la exploración de sexo sano por medio de sex toys y educación sexual">
-    <meta name="author" content="explora">
-    <link rel="alternate" hreflang="es" href="http://explora.life/" />
-    
-    
-    <!--Opengrph-->
-    <meta property="og:title" content="Felicidad y libertad sexual" />
-    <meta property="og:site_name" content="Explora.life"/>
-    <meta property="og:url" content="http://explora.life/nosotros/" />
-    <meta property="og:description" content="Promovemos la felicidad, la igualdad y la libertad sexual en Latino America, impulsando el entendimiento y la exploracion de relaciones sanas y consensuales" />
-    <meta property="og:image" content="http://explora.life/_img_website/hero_facebookthumb.jpg" />
-    
-    <!-- twitter-->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="@explora_life">
-	<meta name="twitter:creator" content="@explora_life">
-	<meta name="twitter:title" content="Felicidad y libertad sexual">
-	<meta name="twitter:description" content="Promovemos la felicidad, la igualdad y la libertad sexual en Latino America, impulsando el entendimiento y la exploracion de relaciones sanas y consensuales">
-	<meta name="twitter:image:src" content="http://explora.life/_img_website/hero_facebookthumb.jpg">
-    
-    <!--favicon-->
-    <link rel=icon href=../_img_icons/favicon16x16.png sizes="16x16" type="image/png">
-	<link rel=icon href=../_img_icons/windows48x48.ico sizes="32x32 48x48" type="image/vnd.microsoft.icon">
-	<link rel=icon href=../_img_icons/mac.icns sizes="128x128 512x512 8192x8192 32768x32768">
-	<link rel=icon href=../_img_icons/iphone.png sizes="57x57" type="image/png">
-	<link rel=icon href=../_img_icons/gnome.svg sizes="any" type="image/svg+xml">
-
-    <title>explora.life – Nosotros</title>
+	<?php include("modulos/header.php"); ?>
 
 
+<title>Explora.life – Nosotros</title>
 
+<!--{% block meta %}-->
+    <meta name="description" content="{{ config.default_site_meta_description }}">
+    <!--FB Opengraph-->
+    <meta property="og:title" content="{{ config.site_title }}"/>
+    <meta property="og:site_name" content="{{ config.site_title }}"/>
+    <meta property="og:description" content="{{ config.default_site_meta_description }}"/>
+    <!-- Twitter-->
+    <meta name="twitter:card" content="summary_text-price_image">
+    <meta name="twitter:site" content="{{ config.twitter_handle }}">
+    <meta name="twitter:creator" content="{{ config.twitter_handle }}">
+    <meta name="twitter:title" content="{{ config.site_title }}">
+    <meta name="twitter:description" content="{{ config.default_site_meta_description }}">
+<!--{% endblock %}-->
 
 
     <!-- Bootstrap Core CSS -->
@@ -67,19 +54,34 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-</head>
+</header>
 
 <body id="page-top" class="index">
-
-
-<br><br>
-
-    	<?php include("../_contenido/navigation_nosotros.php"); ?>
-    	<?php include("../_contenido/mision.php"); ?>
-    	<?php include("../_contenido/team.php"); ?>
-    	<?php include("../_contenido/contact.php"); ?>
-    	<?php include("../_contenido/footer.php"); ?>
-    	<?php include("../_contenido/javas.php"); ?>
+    	<?php include("../modulos/navigation.php"); ?>
+    	<?php include("../modulos/mision.php"); ?>
+    	
+    	
+	    <section>     
+		    <div class="container">   
+				<div class="row">
+					<div class=" col-sm-7 ">
+						<h1>¿Qué es explora.life?</h1>
+						<p class="large"> Explora es una organización que enseña educación sexual actualizada y positiva por medio de nuestra <a href="/leer/">revista online</a>, la <a href="/comprar/">tienda online</a> y los <a href="/tuppersex/">talleres TupperSex</a>.</p>
+						<p class="large text-muted"> El sexo es una experiencia maravillosa que nos hace crecer si se practica de forma consensual.</p>
+				    </div>
+					<div class=" col-sm-5 ">
+						<img class="img-centered" src="../media/nosotros.png" alt="nosotros" width="100%"/>
+				    </div>
+				</div>
+		    </div>
+		</section>
+	
+    	
+    	
+    	<?php include("../modulos/team.php"); ?>
+    	<?php include("../modulos/contact.php"); ?>
+    	<?php include("../modulos/footer.php"); ?>
+    	<?php include("../modulos/javas.php"); ?>
 </body>
 
 </html>

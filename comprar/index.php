@@ -7,7 +7,8 @@ session_start();
 <html lang="es">
 
 <head>
-
+	<?php include("../modulos/header.php"); ?>
+	
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -76,8 +77,8 @@ session_start();
 
 
 
-        <?php include("../_contenido/navigation_comprar.php"); ?>
-        <section id="indice" style="background-image:url('../_img_website/sky.jpg');">
+        <?php include("../modulos/navigation.php"); ?>
+        <section id="indice" style="background:url('/media/articles/hands-couple-bathing-suit.jpg'); background-size: cover; ">
             <div class="container">
 			    <div class="row">
 			        <br><br>
@@ -97,7 +98,7 @@ session_start();
 							
 							while($row = $result->fetch_assoc()) {
 							if($cat_count > 0 && $cat_count < $result->num_rows ){
-							    echo ', ';
+							    echo '';
 							}
 							echo '<a class="page-scroll" href="#'.$row['slug'].'">'.$row['name'].'</a></br>';
 							$cat_count++;
@@ -119,13 +120,14 @@ session_start();
   }
   while($row = $result->fetch_assoc()) {
     ?>
-    <!--vibradores -->
+    <!--CATEGORIAS -->
     <section id="<?php echo $row['slug'] ?>" class="bg-gradient-gray" >
         <div class="container">     
             <div class="row">
                 <div class="titulo col-xs-12">
                     <h2 class="section-heading"><?php echo $row['name'] ?></h2>
                 </div>
+                <!--Imagen de la categoría-->
                 <div class="imagen col-xs-12 col-sm-6 col-md-4">
                     <img src="<?php echo $row['img'] ?>" alt="<?php echo $row['name'] ?>" width="100%" height="" />
                 </div>
@@ -136,9 +138,9 @@ session_start();
                 </div>  
             </div>
             
+            
             <div class="row productos-cat">
-            	<div class="col-lg-offset-1 col-lg-10">
-	
+            	<div class="col-lg-12">
 		            <?php
 		                $cat_id=$row['category_id'];
 		                $p_result = $mysqli->query("SELECT * FROM product WHERE category_id='$cat_id' AND stock>0 GROUP BY color_code");
@@ -148,35 +150,64 @@ session_start();
 		              while($p_row = $p_result->fetch_assoc()) {
 		                $product_id = $p_row['product_id'];
 		                ?>
+		                
+		                    <!-- THUMBNAILS-->
 			                <a href="/comprar/<?php echo $p_row['slug']; ?>/">
-			                    <div class="col-xs-6 col-sm-4 col-md-3 animated pulse">
-			                        <?php
-			                        $imgs = $mysqli->query("SELECT * FROM product_img WHERE product_id='$product_id' ORDER BY img_order");
-			                        $count = 0;
-			                        while ($img =  $imgs->fetch_assoc()) {
-			                            if($count==0){
-			                                echo '<div class="otros_imgbg" style="background-image: url(/media/timthumb.php?src='. $img['full_img'] .'&w=200)">  </div>
-			                                <h5 class="text-center text-muted product-name">'.$p_row['name'].'</h5>
-			                                <p class="text-center">$'.number_format($p_row['price']).'</p>'; 
-			                            }
-			                            $count++;
-			                        }
-			                        ?>
+			                    <div class=" col-xs-6 col-sm-4 col-md-3 col-lg-3 animated pulse">
+            				        <div class="card producto">
+
+				                        <?php
+				                        $imgs = $mysqli->query("SELECT * FROM product_img WHERE product_id='$product_id' ORDER BY img_order");
+				                        $count = 0;
+				                        while ($img =  $imgs->fetch_assoc()) {
+				                            if($count==0){
+				                                echo '<div class="card-img" style="background-image: url(/media/timthumb.php?src='. $img['full_img'] .'&w=200)"> </div>
+                        						<div class="card-description text-center">
+					                                <h5 class="text-primary ">'.$p_row['name'].'</h5>
+													<p class="text-price text-secondary">$'.number_format($p_row['price']).'</p>	            			
+													<div class="gr-ending"></div>
+
+				                                </div>'; 
+				                            }
+				                            $count++;
+				                        }
+				                        ?>
+            				        </div>
 			                    </div>
 			                </a>
-		                <?php
+					
+					<?php
 		            }
 		            ?>
+	        		<a href="#/">		
+				        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 animated pulse">
+					        <div class="card division">
+								<div class="card-division">
+			            			<h5>Ver más</h5>
+			            			<h2 class="text-cta"><?php echo $row['name']; ?></h2>
+			            		</div>
+					       	</div>
+				        </div>
+					</a>
+							        
 	            </div>
 	        </div>
 	    </div>
 	</section>
-<?php
-}
-?>
-<?php include("../_contenido/newsletter.php"); ?>
-<?php include("../_contenido/footer.php"); ?>
-<?php include("../_contenido/javas.php"); ?>
+	
+	
+	<a href="#page-top" class="page-scroll top-page-btn">
+		<h1>
+			  <i class="fa fa-lg fa-arrow-circle-up "></i>
+		</h1>
+	</a>
+	
+	<?php
+	}
+	?>
+	<?php include("../modulos/newsletter.php"); ?>
+	<?php include("../modulos/footer.php"); ?>
+	<?php include("../modulos/javas.php"); ?>
 </body>
 
 </html>

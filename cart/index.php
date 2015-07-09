@@ -267,9 +267,8 @@ if(isset($_SESSION['discount_percentage'])){
 
 
 
-<?php //include("../_contenido/newsletter.php"); ?>
-<?php include("../_contenido/footer.php"); ?>
-<?php include("../_contenido/javas_2.php"); ?>
+<?php include("../modulos/footer.php"); ?>
+<?php include("../modulos/javas.php"); ?>
 <script type="text/javascript">
     function validate(){
         var err = 0;
@@ -324,5 +323,7 @@ if(isset($_SESSION['discount_percentage'])){
 
     }
 </script>
+
+
 </body>
 </html>

@@ -111,7 +111,7 @@
 	    </div>
 </section>
 
-
+<!--
     <div class="row">
         <div class="compartir">
 				<h3>Compartir artículo</h3>
@@ -125,27 +125,14 @@
 						<a href="whatsapp://send" data-text="Mira este artículo" data-href="" class="wa_btn wa_btn_s" style="display:none">WhatsApp</a>
 					</div>
 				
-					
-<!--	  	           <ul class="list-inline social-buttons">
-	            	<li><a href="https://www.facebook.com/sharer/sharer.php?app_id=114545895322903&sdk=joey&u=http%3A%2F%2Fexplora.life%2Fabandone-relacion-toxica%2F&display=popup&ref=plugin&src=share_button" target="_blank"><i class="fa fa-facebook"></i></a>
-	            	</li>	                
-	            	<li><a href="https://twitter.com/share" data-text="Explora este artículo sobre sexualidad:" data-via="explora_life" data-lang="es" data-count="none" data-dnt="true" target="_blank"><i class="fa fa-twitter"></i></a>
-	                </li>
-	            </ul>-->
-        
-        
-        
-	        
-	        	<!--<h3>Síguenos en Facebook</h3>
-				<h3><div class="fb-page" data-href="https://www.facebook.com/exploralife" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/exploralife"><a href="https://www.facebook.com/exploralife">Explora.life</a></blockquote></div></div></h3>
-				-->	
+></blockquote></div></div></h3>
 	        
 
         </div>
     </div>
     
 </div>
-
+-->
 
 	<?php include("../_contenido/articulos_relacionados_1.php"); ?>
 

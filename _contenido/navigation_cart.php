@@ -10,7 +10,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-logo page-scroll" href="/"><img src="/_img_icons/logo.svg"></a>
+                <a class="navbar-logo page-scroll" href="/"><img src="/media/logo.svg"></a>
                 <a class="navbar-brand page-scroll" href="/">Explora.life</a>
             </div>
 

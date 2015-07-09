@@ -10,7 +10,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-logo page-scroll" href="../"><img src="../_img_icons/logo.svg"></a>
+                <a class="navbar-logo page-scroll" href="../"><img src="../media/logo.svg"></a>
                 <a class="navbar-brand page-scroll" href="../">Explora.life</a>
             </div>
 
@@ -20,22 +20,21 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="/comprar/">Comprar</a>
-                    </li>     
-                    <li>
-                        <a class="page-scroll" href="/leer/#page-top">Leer</a>
-                    </li>
-                    <!--<li>
-                        <a class="page-scroll" href="#">Compra</a>
-                    </li>-->
-                    <li>
-                        <a class="page-scroll" href="/nosotros/">Nosotros</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Suscríbete</a>
-                    </li>
-                    <li>
+                <li>
+                    <a class="page-scroll" href="/comprar/">Productos</a>
+                </li>                    
+                <li>
+                    <a class="page-scroll" href="/leer/">Leer</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/tuppersex/">TupperSex</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/nosotros/">Nosotros</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="https://www.facebook.com/ExploraLife" target="_blank"><i class="fa fa-lg fa-facebook-square"></i></a>
+                </li>                    <li>
                         <a class="page-scroll btn btn-cart" href="/cart"> <i class="fa fa-shopping-cart"> <?php if($_SESSION["count"]>0){ echo $_SESSION["count"]; } ?></i>
 						</a>
                     </li>                
